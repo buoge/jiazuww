@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.shop.dao.RoleDao">
+	
+	<sql id="basecolumns">`uid`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `userid`, `authority`</sql>
+	<sql id="table">adminrole</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="whereAdminUid">where `userid` = (select `userid` from `admin` where `uid` = #{uid})</sql>
+	<sql id="allfields"><include refid="basecolumns"/>, `userid`, `authority`</sql>
+	<sql id="allparams">#{uid},#{userid},#{authority}</sql>
+	<sql id="setuserid">userid = #{userid}</sql>
+	<sql id="setauthority">authority = #{authority}</sql>
+	<sql id="allsets">set <include refid="setuserid"/>,<include refid="setauthority"/> </sql>
+	<sql id="orderby"></sql>
+	
+	<select id="get" parameterType="string" resultType="role">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="role">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="userid != null">
+				<include refid="setuserid"/>
+			</if>
+			<if test="authority != null">
+				and <include refid="setauthority"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="admin">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="userid != null">
+				<include refid="setuserid"/>
+			</if>
+			<if test="authority != null">
+				and <include refid="setauthority"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="admin">
+		insert into
+		<include refid="table"/>
+		(<include refid="allfields"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="admin">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="userid != null">
+				<include refid="setuserid"/>,
+			</if>
+			<if test="authority != null">
+				and <include refid="setauthority"/>
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+	<delete id="deleteByAdminUid" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereAdminUid"/>
+	</delete>
+	
+</mapper>

@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a Common style file of all blocks in pages */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+/* overwrite base style ---------------------------------------------------------------------**/
+
+/* overwrite main style ---------------------------------------------------------------------**/
+/* .btnlogin { background:transparent url(btnbg.gif) no-repeat 0 -85px; width:142px; height:25px; color:Red; text-align:center; font-size:14px; font-weight:bolder; border:0; cursor:pointer;} */
+
+/* common style of all admin pages ---------------------------------------------------------------**/
+/*
+#bodybga { width:960px; min-height:600px; background:transparent url(bodywhitebg.gif) no-repeat top left; margin-top:10px; position:relative;}
+#bodybgb { width:100%; height:100%; overflow:hidden; background:transparent url(bodywhitebg.gif) no-repeat bottom right; margin-bottom:18px;}
+*/
+.body { width:100%; margin:0; display:table;}
+
+#headarea { display:table; width:100%;}
+#bodyarea .widebox { clear: both; position: relative; width: 100%; display: table;}
+#bodyarea .widebox a {color: #36c;}
+#bodyarea { width:100%; height:100%; padding-top:10px; display:table; width:100%; overflow:hidden;}
+#bodyarea .mybodybga { width: 982px; padding-top:3px; min-height:400px; background: transparent url(../../imgs/default/horizontalbg.png) no-repeat scroll 0 0;}
+#bodyarea .mybodybgb { width: 100%; padding-bottom:3px; height: 98%; background: transparent url(../../imgs/default/horizontalbg.png) no-repeat scroll right bottom;}
+#bodyarea .mybody {position:relative; display:table; width:980px; height: 100%; min-height:400px; margin:0; }
+#bodyarea .boxs { width: 98%; min-height: 300px;}
+#bodyarea .boxs h2.bggrown { color:white; text-indent: 2em; line-height: 30px; font-size: 1.2em; font-weight: bolder; background: transparent  url(../../imgs/default/formpanel.png) -626px -125px no-repeat;}
+#bodyarea .boxs h2.bgred { color:white; text-indent: 2em; line-height: 30px;  font-size: 1.2em; font-weight: bolder; background: transparent  url(../../imgs/default/formpanel.png) -626px -178px no-repeat;}
+#bodyarea .boxs .btncreate { width:130px; height:32px; color: white; font-size: 1.2em; font-weight: bolder; text-indent: 10px; background: transparent  url(../../imgs/default/formpanel.png) -235px -48px no-repeat;}
+#bodyarea .btnfat {width: 160px; height: 53px; font-size: 2em; font-weight: bold; line-height: 55px; color: white; background: transparent  url(../../imgs/default/formpanel.png) -0 -316px no-repeat; overflow: hidden;}
+#bodyarea .btnwhite {width: 112px; height: 36px; line-height:36px; color: #900; text-align: center; font-size: 15px; font-weight:bold; background: white  url(../../imgs/default/formpanel.png) -363px -178px no-repeat; overflow: hidden;}
+#bodyarea h3.tip { font-size: 1.3em; font-weight: bolder; line-height: 100px; text-align:center;}
+#footarea { clear:both; padding-top:30px; display:table; width:100%;}
+#footarea .mybody { text-align:center; width: 980px; padding-bottom: 60px;}
+#footarea .mybody a { line-height: 40px;}
+
+/*---------分页开始----------*/
+#bodyarea .mybody .pagenum { clear:both; width:100%; margin-top: 30px; border-top: 1px dashed #ccc; padding-top: 9px;}
+#bodyarea .mybody .pagenum ul { width:200px; height:30px; margin:auto; height:40px;}
+#bodyarea .mybody .pagenum ul li{ float:left; margin:5px;}
+#bodyarea .mybody .pagenum ul li a { color:#BA5825; border:solid 1px #d4d4d4; text-align:center; width:20px; height:20px; line-height:20px; display:block;}
+#bodyarea .mybody .pagenum ul li a:hover {background-color: #efefef;}
+#bodyarea .mybody .pagenum ul li a.here { background:#39c; color:White; border:solid 1px #b2e05d;}
+#bodyarea .mybody .pagenum ul li a.next { width:60px; padding: 6px;}
+#bodyarea .mybody .pagenum ul li a.last { width:60px; padding: 6px;}
+/*---------分页结束----------*/

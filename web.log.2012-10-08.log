@@ -1,0 +1,9 @@
+2012-10-08 11:04:30,758 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:88) - 
+2012-10-08 11:04:30,923 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:88) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` ( `oid`,`uid`,`userid`,`groupuid`,`account`,`password`,`name`,`gender`,`realname`,`birthday`,`email`,`intro`,`thumb`,`avatar`,`original`,`signed`,`qq`,`msn`,`phone`,`mobile`,`salary`,`status`,`resetpwd`,`logincount`,`educount`,`eventcount`,`groupcount`,`msgcount`,`errorlasttime`,`errorcount`,`errorip`,`lastlogintime`,`lastloginip`,`registerip`,`createtime`,`updatetime` )   values (     ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?    )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+2012-10-08 11:04:30,951 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:88) - 

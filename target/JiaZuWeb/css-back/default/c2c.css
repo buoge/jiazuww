@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.boxs { margin: 8px; height: 100%;}
+.widebox { width: 99% !important; overflow: hidden;}
+.widebox h2 {border-bottom: 1px solid #ccc; width:100%; height:36px; display:block; margin:auto; font-size: 1.5em; line-height: 2em; margin-top: 6px; overflow: hidden; }
+.bgb2c1 {background: transparent url(../../imgs/default/horizontalline.png) -720px 5px no-repeat;}
+.bgb2c2 {background: transparent url(../../imgs/default/horizontalline.png) -720px -38px no-repeat;}
+.bgb2c3 {background: transparent url(../../imgs/default/horizontalline.png) -720px -72px no-repeat;}
+.box {width: 95%; clear: both;}
+a.more {float: right;font-size: 12px; line-height: 50px; color: #36c}
+.ul1 {color: #000; width: 121px; margin: 5px; float: left;}
+.ul1 img {width: 120px; height: 120px; border: 1px solid #ccc; padding: 1px;}
+.block { margin-top: 6px; margin-bottom: 30px; display: table; margin-left: 0; width: 100%; min-height: 300px;}
+.ul2 { margin-left: 0; width: 100%; display: table; font-size: 1.1em;}
+.ul2 li {line-height: 25px;}
+.ul3 {color: #000; width: 300px; height:100px; margin: 3px; float: left;}
+.ul3 img {border: 1px solid #ccc; padding: 1px; width: 110px; height: 80px;}
+.ul3 .right {width: 180px;}

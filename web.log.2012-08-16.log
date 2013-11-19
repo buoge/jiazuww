@@ -1,0 +1,70 @@
+2012-08-16 14:13:43,275 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+; SQL []; Column 'uid' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+2012-08-16 14:13:43,298 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+2012-08-16 14:20:12,904 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+; SQL []; Column 'uid' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+2012-08-16 14:20:12,911 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+2012-08-16 14:42:41,481 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+; SQL []; Column 'uid' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+2012-08-16 14:42:41,505 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+2012-08-16 14:54:22,492 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+; SQL []; Column 'uid' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+2012-08-16 14:54:22,501 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+2012-08-16 15:08:47,521 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+; SQL []; Column 'uid' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'uid' cannot be null
+2012-08-16 15:08:47,547 ERROR [main] com.jiazu.web.platform.serviceimpl.UserSOImpl(UserSOImpl.java:83) - 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+### The error may involve com.jiazu.web.platform.dao.UserDao.insertUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into `user` (uid, userid, password, name, createtime)   values (?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'
+; SQL []; Duplicate entry 'greathill' for key 'userid'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'greathill' for key 'userid'

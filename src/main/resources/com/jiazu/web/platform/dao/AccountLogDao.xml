@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.platform.dao.AccountLogDao">
+	
+	<sql id="basecolumns">uid,createtime</sql>
+	<sql id="allcolumns">`uid`, `useruid`, `doaction`, `usemoney`, `account`, `createtime`</sql>
+	<sql id="fromtable">from accountlog</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allparams">#{uid}, #{useruid}, #{doaction}, #{usemoney}, #{account}, #{createTime}</sql>
+	<sql id="setuseruid">useruid = #{useruid}</sql>
+	<sql id="allsets">set <include refid="setuseruid"/>,doaction = #{doaction}, usemoney = #{usemoney}, account = #{account}</sql>
+	<sql id="orderby">order by createtime</sql>
+	
+	<select id="get" parameterType="string" resultType="accountLog">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="accountLog">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="accountLog">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}<!-- ${orderby} -->
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="accountLog">
+		insert into accountlog (<include refid="allcolumns"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="accountLog">
+		update accountlog
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update accountlog
+		<set>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>,
+			</if>
+			<if test="usemoney != null">
+				usemoney = #{usemoney},
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete <include refid="fromtable"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

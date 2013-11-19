@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.platform.dao.EventDao">
+	
+	<sql id="basecolumns">`uid`,`createtime`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `useruid`, `userName`, `groupuid`, `groupName`, `groupImg`, `type`, `content`, `img`, `bigimg`, `rawimg`, `commentcount`, `isrecommend`, `ispublic`, `status`, `updatetime`</sql>
+	<sql id="table">events</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allfields"><include refid="basecolumns"/>, `useruid`, `userName`, `groupuid`, `groupName`, `groupImg`, `type`, `content`, `img`, `bigimg`, `rawimg`, `commentcount`, `isrecommend`, `ispublic`, `status`</sql>
+	<sql id="allparams">#{uid},#{createTime},#{useruid},#{userName},#{groupuid},#{groupName},#{groupImg},#{type},#{content},#{img},#{bigimg},#{rawimg},#{commentcount},#{isrecommend},#{ispublic},#{status}</sql>
+	<sql id="setuseruid">useruid = #{useruid}</sql>
+	<sql id="setgroupuid">groupuid = #{groupuid}</sql>
+	<sql id="setisrecommend">isrecommend = #{isrecommend}</sql>
+	<sql id="setispublic">ispublic = #{ispublic}</sql>
+	<sql id="setsearch">(content like CONCAT('%',#{search},'%') )</sql>
+	<sql id="setgroupuids">FIND_IN_SET(`groupuid` ,#{groupuids}) > 0</sql>
+	<sql id="allsets">set <include refid="setuseruid"/>,<include refid="setgroupuid"/>, userName = #{userName}, groupName = #{groupName}, groupImg = #{groupImg}, type = #{type}, content = #{content}, img = #{img}, bigimg = #{bigimg}, rawimg = #{rawimg}, commentcount = #{commentcount}, <include refid="setisrecommend"/>, <include refid="setispublic"/>, status = #{status} </sql>
+	<sql id="orderby">order by createtime</sql>
+	
+	<select id="get" parameterType="string" resultType="event">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="event">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="groupuid != null">
+				and <include refid="setgroupuid"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="event">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="groupuid != null">
+				and <include refid="setgroupuid"/>
+			</if>
+			<if test="search != null">
+				and <include refid="setsearch"/>
+			</if>
+			<if test="groupuids != null">
+				and <include refid="setgroupuids"/>
+			</if>
+			<if test="isrecommend != null">
+				and <include refid="setisrecommend"/>
+			</if>
+			<if test="ispublic != null">
+				and <include refid="setispublic"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="event">
+		insert into
+		<include refid="table"/>
+		(<include refid="allfields"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="event">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>,
+			</if>
+			<if test="isrecommend != null">
+				<include refid="setisrecommend"/>,
+			</if>
+			<if test="ispublic != null">
+				<include refid="setispublic"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

@@ -1,0 +1,1 @@
+缓存的xml objects等等

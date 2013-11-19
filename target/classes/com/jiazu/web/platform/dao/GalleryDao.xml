@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.platform.dao.GalleryDao">
+	
+	<sql id="basecolumns">`uid`,`createtime`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `useruid`, `groupuid`, `img`, `littlethumb`, `thumb`, `bigthumb`, `original`, `title`, `desc`, `istop`, `clickcount`, `sortorder`</sql>
+	<sql id="table">customgallery</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allparams">#{uid},#{createTime},#{useruid},#{groupuid},#{img},#{littlethumb},#{thumb},#{bigthumb},#{original},#{title},#{desc},#{istop},#{clickcount},#{sortorder}</sql>
+	<sql id="setuseruid">useruid = #{useruid}</sql>
+	<sql id="setgroupuid">groupuid = #{groupuid}</sql>
+	<sql id="setistop">istop = #{istop}</sql>
+	<sql id="setclickcount">clickcount = #{clickcount}</sql>
+	<sql id="setclickcount_increase">clickcount = clickcount + #{clickcount}</sql>
+	<sql id="allsets">set <include refid="setuseruid"/>,<include refid="setgroupuid"/>, img = #{img}, littlethumb = #{littlethumb}, thumb = #{thumb}, bigthumb = #{bigthumb}, original = #{original}, title = #{title}, `desc` = #{desc}, <include refid="setistop"/>, <include refid="setclickcount"/>, sortorder = #{sortorder} </sql>
+	<sql id="orderby">order by createtime</sql>
+	
+	<select id="get" parameterType="string" resultType="Gallery">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="Gallery">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="groupuid != null">
+				and <include refid="setgroupuid"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="Gallery">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="groupuid != null">
+				and <include refid="setgroupuid"/>
+			</if>
+			<if test="istop != null">
+				and <include refid="setistop"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="Gallery">
+		insert into
+		<include refid="table"/>
+		(<include refid="allcolumns"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="Gallery">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>,
+			</if>
+			<if test="istop != null">
+				<include refid="setistop"/>,
+			</if>
+			<if test="clickcount != null">
+				<include refid="setclickcount"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="increase" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="clickcount != null">
+				<include refid="setclickcount_increase"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

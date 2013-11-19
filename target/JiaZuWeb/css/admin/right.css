@@ -1,0 +1,44 @@
+body { width:99%; background-color: #fff;}/*for no horizontal scroll bar*/
+/* style of right pages ---------------------------------------------------------------**/
+.body { width:auto; width:100%;}
+#headarea { width:100%; height:42px; line-height:42px; overflow:hidden; background:Transparent url(../../imgs/admin/fairy.png) no-repeat left top; border-bottom:solid 1px #999999;}
+#headarea .mybody { width:100%; height:100%;}
+#headarea .left { font-size:1.3em; color:#333333; text-indent:4em; line-height:50px;}
+#headarea .right { margin-right:8px;line-height:42px; }
+#headarea .right a { color:#003366;}
+#headarea .right a:hover { color:#FF9900;}
+#bodyarea { width:100%; overflow:hidden;}
+#bodyarea .mybody { width:100%;}
+#bodyarea h2 {font-weight: bold;}
+#bodyarea .bg1 { clear:both; background:Transparent; height:auto !important; height:50px; min-height:50px; line-height:50px; text-indent:2em;}
+#bodyarea .bg1 label {width: 150px; display: inline-block; text-align: right; margin-right: 30px;}
+#bodyarea .bg2 label {width: 150px; display: inline-block; text-align: right; margin-right: 30px;}
+#bodyarea .bg2 { clear:both; background:#F5F7F8; height:auto !important; height:50px; min-height:50px; line-height:50px; text-indent:2em;}
+#bodyarea ul.searchbox {width:900px; margin: auto; display: table; clear: both;}
+#bodyarea ul.searchbox li { width: 300px ！important; height:40px; float: left;}
+#bodyarea ul.searchbox li label {margin: 0; margin-right: 6px; width: 90px;  display: inline-block !important; float: left;}
+#bodyarea table.list { margin-top: 6px; border: 1px solid #ddd; width: 95%;}
+#bodyarea table.list thead {background-color: #f3f3f3; border-bottom: 1px solid #ddd;}
+#bodyarea table.list thead tr { height: 40px; color: #666;}
+#bodyarea table.list tbody tr { height: 60px; background-color: #fffdee; border-bottom: 1px solid #ccc;}
+#bodyarea table.list tbody .goleft {display:inline-block; margin-left:20px; width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -360px no-repeat; float: left;_margin-top:-9px;}
+#bodyarea table.list tbody .goright {display:inline-block;width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -384px no-repeat; float: left;  _margin-top:-9px;}
+#bodyarea table.list tbody .txtnum { height: 25px; line-height:15px; _padding-top: 6px;}
+#bodyarea table.list tbody a {color: #36c;}
+#bodyarea table.list tr th,td { text-align: center; padding:1px; vertical-align:middle; height:40px;}
+#bodyarea table.list tfoot {background-color: #f3f3f3; border-top: 1px solid #ddd;}
+#bodyarea .w5 { float:left; width:5%; text-align:left; text-indent:0;}
+#bodyarea .w15 { float:left; width:15%; text-align:left; text-indent:0;}
+#bodyarea .w10 { float:left; width:10%; text-align:left; text-indent:0;}
+#bodyarea .w20 { float:left; width:20%; text-align:left; text-indent:0;}
+#bodyarea .w30 { float:left; width:30%; text-align:left; text-indent:0;}
+#bodyarea .w600 { float:left; width:600px; text-align:left; text-indent:0;}
+#bodyarea dl.pic { float:left; width:80px; height:100px; margin:0; margin-left:3px; overflow:hidden; line-height:normal; text-indent:0;}
+#bodyarea dl.pic dt { text-align:center;}
+#bodyarea dl.pic dd { text-align:center;}
+#bodyarea dl.pic dd a {}
+#bodyarea dl.pic dd a:hover { text-decoration:underline}
+#bodyarea dl.pic dd img { width:80px; height:60px;}
+#footarea { width:100%;}
+#footarea .mybody {}
+#footarea .block {width:600px; margin-top:60px;}

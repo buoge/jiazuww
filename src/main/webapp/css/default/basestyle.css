@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Base Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a base style file of all files:set color font size .etc */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+@import url("../basestyle.css");
+
+a{color: #white;}
+a:link {color: #333333;}
+a:active {color: #ff6633;}
+a:visited {color: #666666;}
+a:hover {color: #ff6633; text-decoration:underline;}
+h1,h2,h3,h4,h5,h6 {font-size:12px;}
+input,textarea {font-size:12px; background-color:White;}
+body {color:#333333; background: #9b0a0e url(../../imgs/default/longfeng.png) top center no-repeat; font-size:12px; letter-spacing: 1px; }
+hr { color:#DDDDDD;*color:none; margin-top:6px; margin-bottom:6px;}
+br { clear:both;}
+li {*margin-top: -4px;}

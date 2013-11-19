@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a Common style file of all blocks in pages */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+/* overwrite base style ---------------------------------------------------------------------**/
+
+/* overwrite main style ---------------------------------------------------------------------**/
+/* .btnlogin { background:transparent url(btnbg.gif) no-repeat 0 -85px; width:142px; height:25px; color:Red; text-align:center; font-size:14px; font-weight:bolder; border:0; cursor:pointer;} */
+
+/* common style of all #bodyarea .boxs h2.bggrown pages ---------------------------------------------------------------**/
+/*
+#bodybga { width:960px; min-height:600px; background:transparent url(bodywhitebg.gif) no-repeat top left; margin-top:10px; position:relative;}
+#bodybgb { width:100%; height:100%; overflow:hidden; background:transparent url(bodywhitebg.gif) no-repeat bottom right; margin-bottom:18px;}
+*/
+.body { width:100%; margin:8px 0 8px 0; display:table;}
+
+#headarea { display:table; width:100%;}
+#headarea .mybody { width:100%; margin:auto; padding: auto;}
+#headarea .mybody .container {position:relative; width: 980px; margin: auto; padding: 0;}
+#headarea .mybody .container .toplinks {position:absolute; right:0; top:0; float: right; margin: 0 9px 0 0;color:white;}
+#headarea .mybody .container .toplinks a { margin: 0 3px 0 3px;color:white;}
+#headarea .mybody .container .toplinks a:VISITED { color: white;}
+#headarea .mybody .container .logo {width: 120px; height: 90px; margin:0;}
+/*#headarea .mybody .container .logoassist {width: 70px; height: 70px; margin:6px 0 0 10px; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll 0 0;}*/
+#headarea .searchcontainer {margin: 30px 0 0 0;}
+#headarea .searchcontainer .searchbox {height: 35px; *width:565px;}
+#headarea .searchcontainer .searchbox ul { width: 100%; height: 100%;}
+#headarea .searchcontainer .searchbox ul li {float: left; height: 100%; position: relative;}
+#headarea .searchcontainer .searchbox ul li ol.downlistchooser {display:table; position:absolute; z-index: 9999; float:left; margin-left:3px; text-indent:1.8em; border: 1px solid #acacac;width: 80px; line-height: 35px; padding:0 0 3px 0;  background: #fff;}
+#headarea .searchcontainer .searchbox ul li ol.downlistchooser li {width:100%; height: 38px; line-height: 35px; border-bottom: 1px solid #ccc;}
+#headarea .searchcontainer .searchbox ul li ol.downlistchooser li:hover {background-color: #ccc; cursor: pointer;}
+#headarea .searchcontainer .searchtxt { width: 350px; height: 35px; line-height: 25px; border: 1px solid #acacac; background: #ffffff url(../../imgs/default/verticalicons.png) no-repeat scroll -82px 10px; padding: 0 0 0 20px; line-height:36px\9; font-size: 1.5em;}
+#headarea .searchcontainer .downlist { float:left; margin:0 0 0 3px;color:white;ext-indent:1em; border: 0px solid #acacac;width: 80px; height: 33px; line-height: 35px; padding:0 0 3px 0; background: transparent url(../../imgs/default/quanbu.png) no-repeat scroll 0 0;}
+#headarea .searchcontainer .search { cursor: pointer; margin-left:6px;background:transparent url(../../imgs/default/sousuo.png) no-repeat scroll 0 10px; width: 95px; height: 35px; color: white; border: none;}
+/* #headarea .searchcontainer .search:HOVER {cursor: pointer; margin-left:6px; background: transparent; width: 95px; height: 35px; color: white; border: none;} */
+#headarea .searchcontainer .searchtags { margin: 10px 0 0 6px;color:white;}
+#headarea .searchcontainer .searchtags a { color:#ff6633; margin: 0 3px 0 3px;}
+#headarea .mybody .container .menu { margin: 0 0 0 120px;}
+#headarea .mybody .container .menu ul { height: 33px;}
+#headarea .mybody .container .menu ul li {float: left; position: relative; width: 101px; height: 33px; margin: 0 3px 0 3px;}
+#headarea .mybody .container .menu ul li .new{ width:28px; height:28px; position: absolute; right: -6px; top: -6px;background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll -70px -200px;}
+#headarea .mybody .container .menu ul li a { font-size:1.2em;color:white; font-weight:bold; letter-spacing:3px;  line-height: 33px; display:block; width: 100%; height: 30px; margin:3px 0 0 0; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll 0px -100px; text-align: center;}
+#headarea .mybody .container .menu ul li a:HOVER {text-decoration:none; color:white; height: 33px; line-height: 36px; margin:0; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll 0px -140px;}
+#headarea .mybody .container .menu ul li a.here {text-decoration:none; color:white; height: 33px; line-height: 36px; margin:0; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll 0px -140px;}
+#headarea .mybody .bar { width: 100%; height: 30px; color: white; background: #6b0401; padding: auto;}
+#headarea .mybody .bar .container { margin: auto; width: 980px; height: 100%;}
+#headarea .mybody .bar .container dl { line-height: 30px;}
+#headarea .mybody .bar .container dl dt { line-height: 30px; float: left;}
+#headarea .mybody .bar .container dl dd { height: 30px; width:900px; float: left; overflow: hidden;}
+#headarea .mybody .bar .container dl dd h6 { line-height: 30px;}
+#bodyarea .widebox { clear: both; position: relative; width: 100%; display: table;}
+#bodyarea .widebox a {color: #36c;}
+#bodyarea { width:100%; height:100%; padding-top:10px; display:table; width:100%; overflow:hidden;}
+#bodyarea .mybodybga { width: 982px; padding-top:3px; min-height:400px; background: transparent url(../../imgs/default/horizontalbg.png) no-repeat scroll 0 0;}
+#bodyarea .mybodybgb { width: 100%; padding-bottom:3px; height: 98%; background: transparent url(../../imgs/default/horizontalbg.png) no-repeat scroll right bottom;}
+#bodyarea .mybody {position:relative; display:table; width:980px; height: 100%; min-height:400px; margin:0; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb; background: #ffffff; border-top: 1px solid white; border-bottom: 1px solid white;}
+#bodyarea .boxs { width: 98%; min-height: 300px;}
+#bodyarea .boxs h2.bggrown { color:white; text-indent: 2em; line-height: 30px; font-size: 1.2em; font-weight: bolder; background: transparent  url(../../imgs/default/formpanel.png) -626px -178px no-repeat;}
+#bodyarea .boxs h2.bgred { color:white; text-indent: 2em; line-height: 30px;  font-size: 1.2em; font-weight: bolder; background: transparent  url(../../imgs/default/formpanel.png) -626px -178px no-repeat;}
+#bodyarea .boxs .btncreate { width:130px; height:32px; color: white; font-size: 1.2em; font-weight: bolder; text-indent: 10px; background: transparent  url(../../imgs/default/formpanel.png) -235px -48px no-repeat;}
+#bodyarea .btnfat {width: 160px; height: 53px; font-size: 2em; font-weight: bold; line-height: 55px; color: white; background: transparent  url(../../imgs/default/formpanel.png) -0 -316px no-repeat; overflow: hidden;}
+#bodyarea .btnwhite {width: 112px; height: 36px; line-height:36px; color: #900; text-align: center; font-size: 15px; font-weight:bold; background: white  url(../../imgs/default/formpanel.png) -363px -178px no-repeat; overflow: hidden;}
+#bodyarea h3.tip { font-size: 1.3em; font-weight: bolder; line-height: 100px; text-align:center;}
+#footarea { clear:both; padding-top:30px; display:table; width:100%;}
+#footarea .mybody { text-align:center; width: 980px; padding-bottom: 60px;}
+#footarea .mybody a { line-height: 40px;color:white;}
+
+/*---------分页开始----------*/
+#bodyarea .mybody .pagenum { clear:both; width:100%; margin-top: 30px; border-top: 1px dashed #ccc; padding-top: 9px;}
+#bodyarea .mybody .pagenum ul { width:200px; height:30px; margin:auto; height:40px;}
+#bodyarea .mybody .pagenum ul li{ float:left; margin:5px;}
+#bodyarea .mybody .pagenum ul li a { color:#BA5825; border:solid 1px #d4d4d4; text-align:center; width:20px; height:20px; line-height:20px; display:block;}
+#bodyarea .mybody .pagenum ul li a:hover {background-color: #efefef;}
+#bodyarea .mybody .pagenum ul li a.here { background:#39c; color:White; border:solid 1px #b2e05d;}
+#bodyarea .mybody .pagenum ul li a.next { width:60px; padding: 6px;}
+#bodyarea .mybody .pagenum ul li a.last { width:60px; padding: 6px;}
+/*---------分页结束----------*/

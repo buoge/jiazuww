@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.platform.dao.JiazuDao">
+	
+	<sql id="basecolumns">`uid`,`createtime`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `owner`, `ownerid`, `name`, `headimg`, `logo`, `logooriginal`, `brief`, `desc`, `logaction`, `status`, `updatetime`</sql>
+	<sql id="table">jiazu</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allfields"><include refid="basecolumns"/>, `owner`, `ownerid`, `name`, `headimg`, `logo`, `logooriginal`, `brief`, `desc`, `logaction`, `status`</sql>
+	<sql id="allparams">#{uid},#{createTime},#{owner},#{ownerid},#{name},#{headimg},#{logo},#{logooriginal},#{brief},#{desc},#{logaction}, #{status}</sql>
+	<sql id="count">count(uid)</sql>
+	<sql id="setowner">owner = #{owner}</sql>
+	<sql id="setownerid">ownerid = #{ownerid}</sql>
+	<sql id="setname">name = #{name}</sql>
+	<sql id="setheadimg">headimg = #{headimg}</sql>
+	<sql id="setlogo">logo = #{logo}</sql>
+	<sql id="setlogooriginal">logooriginal = #{logooriginal}</sql>
+	<sql id="setbrief">brief = #{brief}</sql>
+	<sql id="setdesc">`desc` = #{desc}</sql>
+	<sql id="setstatus">`status` = #{status}</sql>
+	<sql id="likename">name like CONCAT('%',#{name},'%')</sql>
+	<sql id="likebrief">brief like CONCAT('%',#{brief},'%')</sql>
+	<sql id="likedesc">`desc` like CONCAT('%',#{desc},'%')</sql>
+	<sql id="allsets">set <include refid="setowner"/>,<include refid="setownerid"/>,<include refid="setname"/>,<include refid="setheadimg"/>,<include refid="setlogo"/>,<include refid="setlogooriginal"/>,<include refid="setbrief"/>,<include refid="setdesc"/>, <include refid="setstatus" /></sql>
+	<sql id="orderby">order by createtime</sql>
+	<sql id="joinselectjiazucolumns">j.*</sql>
+	<sql id="jointablejiazu">jiazu j</sql>
+	<sql id="jointablemember">jiazumember m</sql>
+	<sql id="jointableuser">`user` u</sql>
+	<sql id="joinonjiazumemberuid">j.uid = m.uid</sql>
+	<sql id="joinonuseruid">m.useruid = #{useruid}</sql>
+	<sql id="joinselectmembercolumns">m.`uid`,m.`type`,m.`status`,m.`createtime`,m.`updatetime`,u.`oid`,u.`uid` as useruid,u.`userid`,u.`groupuid`,u.`account`,u.`password`,u.`name`,u.`gender`,u.`realname`,u.`birthday`,u.`email`,u.`intro`,u.`thumb`,u.`avatar`,u.`original`,u.`signed`,u.`qq`,u.`msn`,u.`phone`,u.`mobile`,u.`salary`,u.`resetpwd`,u.`logincount`,u.`educount`,u.`eventcount`,u.`groupcount`,u.`msgcount`,u.`errorlasttime`,u.`errorcount`,u.`errorip`,u.`lastlogintime`,u.`lastloginip`,u.`registerip`</sql>
+	<sql id="joinonmemberuseruseruid">m.`useruid` = u.`uid`</sql>
+	<sql id="joinsetgroupuid">m.`uid` = #{uid}</sql>
+	<sql id="joinsettype">m.`type` = #{type}</sql>
+	<sql id="joinsettype_ge">m.`type` >= #{type_ge}</sql>
+	<sql id="joinonjiazustatus">j.status = #{status}</sql>
+	<sql id="whereuidnotnull">j.uid is not null</sql>
+	
+	<select id="get" parameterType="string" resultType="jiazu">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="jiazu">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="owner != null">
+				<include refid="setowner"/>
+			</if>
+			<if test="ownerid != null">
+				and <include refid="setownerid"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setstatus"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getCount" parameterType="hashMap" resultType="int">
+		select
+		<include refid="count" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="owner != null">
+				<include refid="setowner"/>
+			</if>
+			<if test="ownerid != null">
+				and <include refid="setownerid"/>
+			</if><if test="name != null">
+				and <include refid="likename"/>
+			</if>
+			<if test="headimg != null">
+				and <include refid="setheadimg"/>
+			</if>
+			<if test="logo != null">
+				and <include refid="setlogo"/>
+			</if>
+			<if test="logooriginal != null">
+				and <include refid="setlogooriginal"/>
+			</if>
+			<if test="brief != null">
+				and <include refid="likebrief"/>
+			</if>
+			<if test="desc != null">
+				and <include refid="likedesc"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setstatus"/>
+			</if>
+		</where>
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="jiazu">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="owner != null">
+				and <include refid="setowner"/>
+			</if>
+			<if test="ownerid != null">
+				and <include refid="setownerid"/>
+			</if>
+			<if test="name != null">
+				and <include refid="likename"/>
+			</if>
+			<if test="headimg != null">
+				and <include refid="setheadimg"/>
+			</if>
+			<if test="logo != null">
+				and <include refid="setlogo"/>
+			</if>
+			<if test="logooriginal != null">
+				and <include refid="setlogooriginal"/>
+			</if>
+			<if test="brief != null">
+				and <include refid="likebrief"/>
+			</if>
+			<if test="desc != null">
+				and <include refid="likedesc"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setstatus"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<select id="getAssociateListByUseruid" parameterType="hashMap" resultType="jiazu">
+		select distinct
+		<include refid="joinselectjiazucolumns" />
+		from
+		<include refid="jointablejiazu"/> right join 
+		<include refid="jointablemember"/>
+		<trim prefix="on" prefixOverrides="and" suffixOverrides="and">
+			<include refid="joinonjiazumemberuid"/> and 
+			<if test="useruid != null">
+				<include refid="joinonuseruid"/> and
+			</if>
+			<if test="status != null">
+				<include refid="joinonjiazustatus"/> and
+			</if>
+		</trim>
+		<where>
+			<include refid="whereuidnotnull"/>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<select id="getMemberList" parameterType="hashMap" resultType="member">
+		select
+		<include refid="joinselectmembercolumns" />
+		from
+		<include refid="jointablemember"/> left join
+		<include refid="jointableuser"/>
+		<trim prefix="on" prefixOverrides="and">
+			<include refid="joinonmemberuseruseruid"/>
+		</trim>
+		<where>
+			<if test="uid != null">
+				<include refid="joinsetgroupuid"/>
+			</if>
+			<if test="type != null">
+				and <include refid="joinsettype"/>
+			</if>
+			<if test="type_ge != null">
+				and <include refid="joinsettype_ge"/>
+			</if>
+			<if test="useruid != null">
+				and <include refid="joinonuseruid"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	
+	
+	<insert id="insert" parameterType="jiazu">
+		insert into
+		<include refid="table"/>
+		(<include refid="allfields"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="jiazu">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="owner != null">
+				<include refid="setowner"/>,
+			</if>
+			<if test="ownerid != null">
+				<include refid="setownerid"/>,
+			</if>
+			<if test="name != null">
+				<include refid="setname"/>,
+			</if>
+			<if test="headimg != null">
+				<include refid="setheadimg"/>,
+			</if>
+			<if test="logo != null">
+				<include refid="setlogo"/>,
+			</if>
+			<if test="logooriginal != null">
+				<include refid="setlogooriginal"/>,
+			</if>
+			<if test="brief != null">
+				<include refid="setbrief"/>,
+			</if>
+			<if test="desc != null">
+				<include refid="setdesc"/>,
+			</if>
+			<if test="status != null">
+				<include refid="setstatus"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

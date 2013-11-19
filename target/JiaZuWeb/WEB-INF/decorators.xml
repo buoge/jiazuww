@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/Decorators">
+	<!-- Any urls that are excluded will never be decorated by Sitemesh -->
+	<excludes>
+		<pattern>/40*</pattern>
+		<pattern>/html/*</pattern>
+		<pattern>*.htm</pattern>
+		<pattern>*.html</pattern>
+		<pattern>/api/*</pattern>
+		<pattern>/ckeditor/*</pattern>
+		<pattern>/admin/login</pattern>
+		<pattern>/admin/index</pattern>
+		<pattern>/admin/menu</pattern>
+		<pattern>/admin/gallery/*</pattern>
+	</excludes>
+	
+	<decorator name="admin" page="Admin/Admin.ftl">
+		<pattern>/admin*</pattern>
+	</decorator>
+	
+	<decorator name="userhome" page="Web/UserHome.ftl">
+		<pattern>/myhome*</pattern>
+	</decorator>
+	
+	<decorator name="web" page="Web/Web.ftl">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<!--
+	<decorator name="main" page="main.jsp" />
+	
+	<decorator name="user" page="user.ftl">
+		<pattern>/user*</pattern>
+	</decorator>
+	<decorator name="admin" page="admin.ftl">
+		<pattern>/admin*</pattern>
+	</decorator>
+	
+	<decorator name="panel" page="panel.ftl" />
+	<decorator name="printable" page="printable.jsp" />
+	<decorator name="error" page="error.ftl" />
+	-->
+</decorators>

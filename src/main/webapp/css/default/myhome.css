@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";.mybody .menu2 li a.here
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.widebox { width: 99% !important; overflow: hidden;}
+.topbox {width: 100%; display: table; clear: both;}
+img.jiazuhead { float: left; margin: 6px; border: 1px solid #ccc; padding: 2px; width:130px; height: 130px;}
+.topinfo {float: right; width: 800px; margin: 9px;}
+.topinfo dl {width: 100%; clear: both;}
+.topinfo dt {font-size: 1.2em; font-weight: bold; line-height: 36px; border-bottom: 1px solid #ccc;}
+.topinfo dd { margin: 3px 9px 3px 30px; float: left;}
+.widebox .bar {width: 99%; display:table; margin:3px auto; *margin-top:9px;}
+.widebox .bar h2 {line-height: 30px; position:absolute; width:140px; font-size:1.3em; font-weight:bold; text-indent: 4em; background: transparent url(../../imgs/default/formpanel.png) -656px -568px no-repeat; overflow: hidden;border: 1px solid #ccc; border-right: 0;}
+.widebox .bar .right { text-indent:2em; width: 820px; border: 1px solid #ccc;}
+.widebox .bar p { line-height: 30px; font-size: 1.7em; font-weight: bold;font-family:华文新魏,微软雅黑,黑体,宋体,Tahoma,verdana,Arial, Helvetica, sans-serif;}
+.bodybox {width: 100%; margin-top: 9px;}
+.bodybox h1 {color: #900; border-bottom: 1px solid #ccc; font-size: 2em; line-height: 2em; text-indent: 1.5em;}
+.bodybox h1 p {float: right; margin: 9px 15px auto auto; font-size: 18px; color: #333; *margin-top: -45px;}
+.bodybox h1 p .txt {width: 500px; background: white url(../../imgs/default/verticalicons.png) no-repeat scroll -82px 6px; padding-left: 20px; font-size: 15px;}
+.bodybox .menu {width: 150px; margin: 5px; float: left; display: table;}
+.bodybox .menu ul {width: 155px;}
+.bodybox .menu li {width: 100%; height: 30px; margin-top: 3px;}
+.bodybox .menu li a {width: 100%; height: 100%; display:block; font-size:1.2em; color:#333 !important; text-indent:2em; line-height: 30px; background: transparent url(../../imgs/default/formpanel.png) -172px -315px no-repeat;}
+.bodybox .menu li a:HOVER {text-decoration: none; background: transparent url(../../imgs/default/formpanel.png) -347px -315px no-repeat;}
+.bodybox .menu li a.here {background: transparent url(../../imgs/default/formpanel.png) -347px -315px no-repeat;}
+.mycontainer {float: right;display: table; width: 800px; margin-top: 15px;}
+.mycontainer .search {line-height: 40px;}
+.mycontainer .search label {font-size: 1.2em;}
+.mycontainer .block h2 {font-size: 1.2em; line-height:30px; border-bottom: 1px dashed #999; margin-bottom: 6px;}
+.mycontainer .block .content {margin: 3px; line-height: 20px; text-indent: 2em; margin-bottom: 9px;}
+
+.mybody .menu2 { clear:both; position:relative; height:35px; width:100%; margin-top:20px;}
+.mybody .menu2 ul { position:absolute; bottom:-1px;}
+.mybody .menu2 li { width:94px; height:31px; float:left; margin-left:3px; overflow: hidden;}
+.mybody .menu2 li h3 {font-size: 1.2em; line-height: 39px; font-weight:bold; text-align: right; color: #999;}
+.mybody .menu2 li a { display:block; color:#333 !important; line-height:31px; font-size:1.1em; text-align:center; width:100%; height:100%; background:Transparent url(../../imgs/default/usercenter.gif) no-repeat 0 -65px;}
+.mybody .menu2 li a:hover { color:White !important; background:Transparent url(../../imgs/default/usercenter.gif) no-repeat 0 -34px;}
+.mybody .menu2 li a.here { color:black!important; background:Transparent url(../../imgs/default/usercenter.gif) no-repeat 0 -34px;} 
+.mybody .menu2bottom { height:auto !important; height:3px; min-height:3px; background:#39c; position:relative; width:100%; clear:both;}
+
+/* logo begin................................  */
+#f_fileupload #file {height: 20px; border: 1px solid #999\9;}
+.mylogo {padding: auto; display: block; margin-top: 30px;width:600px; overflow: hidden;}
+.mylogo img { margin:auto;}
+/* logo end..................................  */
+
+.txttop {line-height: 30px; vertical-align: top;}
+/* brief begin................................  */
+#txtbrief {width: 500px; height: 65px;}
+.leftmsg {margin-left: 65px; color: red; line-height: 30px; float: left;}
+.briefbtmbar { margin-right: 240px; height:30px; line-height:30px; overflow: hidden; float: right;}
+/* brief end..................................  */
+
+/* brief begin................................  */
+#txtdesc {width: 700px; height: 200px;}
+.historybtmbar { margin-right: 50px; height:30px; line-height:30px; overflow: hidden; float: right;}
+/* brief end..................................  */
+
+
+form div { margin: 9px;}
+/* edu begin................................  */
+.edulist {}
+.edulist li {line-height: 30px; list-style-type: disc; list-style-position: inside;}
+.edulist li:hover {background-color: #eee; cursor: pointer;}
+.edulist li h3 {line-height: 30px; display: inline;}
+.edulist li span { margin-left: 30px;}
+.edulist li span a { margin-left: 10px;}
+.edulist li #action { display: none;}
+.edulist li.hover #action { display: inline;}
+#txtcontent {width: 700px; height: 200px;}
+.edubtmbar {padding-left: 40px; padding-right: 30px;}
+.edubtmbar .btn2 {float: right; }
+.txtbtm { position: absolute; right:0px; bottom: 3px;}
+/* edu end..................................  */
+
+/* event begin................................  */
+#f_event #txtcontent {height: 100px;}
+/* event end..................................  */
+
+/* member begin................................  */
+.memberbtmbar {margin-left: 200px; height:30px; line-height:30px; overflow: hidden; float: left;}
+/* member end..................................  */
+
+/* account begin................................  */
+#f_pwd div { width: 100%; height: 36px; line-height: 30px;}
+#f_pwd div label { width: 150px; text-align: right; display: block; float: left;}
+#f_pwd div input {float: left;}
+#f_infor div { width: 100%; height: 36px; line-height: 30px;}
+#f_infor div label { width: 150px; text-align: right; display: block; float: left;}
+#f_infor div input {float: left;}
+.accountbtmbar {margin-left: 320px;}
+/* account end..................................  */
+
+/* jiazu begin................................  */
+.verticallist {clear: both; display: table;}
+.verticallist dl { margin: 9px auto auto auto; float: right; width: 620px;}
+.verticallist dl dt { font-size: 1.2em; font-weight: bold;}
+.verticallist dl dt a { font-size: 12px; font-weight: normal;}
+.verticallist dl dd {}
+.verticallist dl dd.content {min-height: 80px;}
+.verticallist dl dd.btmbar {text-align: right;}
+/* jiazu end..................................  */

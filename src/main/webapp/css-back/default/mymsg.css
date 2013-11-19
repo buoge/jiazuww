@@ -1,0 +1,10 @@
+#f_msg div,span { margin: 0;}
+.head1 { width: 50px; height:50px; position: relative; cursor: pointer; margin: 3px !important; float: left;}
+.head1 .tagbg {position:absolute; width:100%;  height: 15px; left: 0; bottom: 0; background: #000; opacity: .5;filter: alpha(opacity=50);}
+.head1 .tag {font-size: 1em; position: absolute; left: 0; bottom: 0; white-space: pre; height: 15px; line-height: 15px;color: white;}
+table.msgblock { width: 90%; margin: auto;}
+table.msgblock tr td {border-bottom: 1px dashed #ccc; margin: 9px;}
+table.msgblock tr:HOVER {background-color: #eee;}
+.msg { text-indent: 2em; width: 600px; margin: 5px !important;}
+.doaction {float: right; clear:right; margin: 9px !important;}
+.sendblock {width: 100%; clear: both;  text-align: right;}

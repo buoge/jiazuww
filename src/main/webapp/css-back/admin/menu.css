@@ -1,0 +1,18 @@
+/* overwrite base style ---------------------------------------------------------------------**/
+body { background:#B1BDCB}
+/* style of login pages ---------------------------------------------------------------**/
+.body {}
+#headarea { display:none; width: 205px !important;}
+#bodyarea { height:100%;}
+#bodyarea .mybody {width: 205px !important;background-color: #B1BDCB;}
+#bodyarea .expandleft { float:left; width:6px; height:100%; background:#c3c7d3 url(../../imgs/admin/collapse.gif) no-repeat center center; cursor:hand;}
+#bodyarea .collapseleft { float:left; width:6px; height:100%; background:#c3c7d3 url(../../imgs/admin/expand.gif) no-repeat center center; cursor:hand;}
+#bodyarea dl { width:185px; background:#EEEEEE; margin:8px auto auto 6px;}
+#bodyarea dl dt { width:100%; height:23px; text-indent:2em; font-weight:bold; background:#B1BDCB url(../../imgs/admin/top_level_bg.gif) no-repeat left top; cursor:hand;}
+#bodyarea dl dt span { float:left; line-height:23px;}
+#bodyarea dl dt img { float:right; margin:2px 3px auto auto;}
+#bodyarea dl dd { width:100%; height:25px; line-height:25px; overflow:hidden;}
+#bodyarea dl dd a { display:block; width:100%; height:100%; letter-spacing:0.1em;}
+#bodyarea dl dd a img { margin:3px 3px auto 15px; float:left;}
+#bodyarea dl dd a span { float:left; cursor:hand;}
+#footarea { display:none}

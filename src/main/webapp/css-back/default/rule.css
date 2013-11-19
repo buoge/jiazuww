@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+fieldset {margin: 30px; border: 1px solid #ccc;}
+fieldset .title {color: #666666; font-size: 1.5em; line-height: 36px; font-weight: bolder; text-indent: 1.5em;}
+fieldset .container { line-height: 25px; text-indent: 2em; margin: 15px;}

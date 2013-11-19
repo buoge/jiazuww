@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.shop.dao.OrderDao">
+	
+	<sql id="basecolumns">`uid`,`createtime`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `useruid`, `userid`, `username`, `ordersn`, `totalamount`, `unitprice`, `minusprice`, `totalprice`, `shippingid`, `postscript`, `shippingfee`, `shipping_name`, `consignee`, `province`, `city`, `district`, `address`, `zipcode`, `tel`, `mobile`, `email`, `memo`, `orderstatus`, `shippingstatus`, `paystatus`, `payid`, `payname`, `exprdate`, `updatetime`</sql>
+	<sql id="table">b2corder</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allfields"><include refid="basecolumns"/>, `useruid`, `userid`, `username`, `ordersn`, `totalamount`, `unitprice`, `minusprice`, `totalprice`, `shippingid`, `postscript`, `shippingfee`, `shipping_name`, `consignee`, `province`, `city`, `district`, `address`, `zipcode`, `tel`, `mobile`, `email`, `memo`, `orderstatus`, `shippingstatus`, `paystatus`, `payid`, `payname`, `exprdate`</sql>
+	<sql id="allparams">#{uid},#{createTime},#{useruid},#{userid},#{username},#{ordersn},#{totalamount},#{unitprice},#{minusprice},#{totalprice},#{shippingid},#{postscript},#{shippingfee},#{shipping_name},#{consignee},#{province},#{city},#{district},#{address},#{zipcode},#{tel},#{mobile},#{email},#{memo},#{orderstatus},#{shippingstatus},#{paystatus},#{payid},#{payname},#{exprdate}</sql>
+	<sql id="setuseruid">useruid = #{useruid}</sql>
+	<sql id="setuserid">userid = #{userid}</sql>
+	<sql id="setuserid_lk">userid like CONCAT('%',#{userid_lk},'%')</sql>
+	<sql id="setusername">username = #{username}</sql>
+	<sql id="setusername_lk">username like CONCAT('%',#{username_lk},'%')</sql>
+	<sql id="setordersn">ordersn = #{ordersn}</sql>
+	<sql id="setordersn_lk">ordersn like CONCAT('%',#{ordersn_lk},'%')</sql>
+	<sql id="setpaystatus">paystatus = #{paystatus}</sql>
+	<sql id="setorderstatus">orderstatus = #{orderstatus}</sql>
+	<sql id="setshippingstatus">shippingstatus = #{shippingstatus}</sql>
+	<sql id="setminusprice">minusprice = #{minusprice}</sql>
+	<sql id="allsets">set <include refid="setuseruid"/>,<include refid="setuserid"/>,<include refid="setusername"/>, <include refid="setordersn"/>,<include refid="setpaystatus"/>,<include refid="setorderstatus"/>,<include refid="setshippingstatus"/>,
+		totalamount = #{totalamount}, unitprice = #{unitprice}, <include refid="setminusprice"/>, totalprice = #{totalprice}, shippingid = #{shippingid}, postscript = #{postscript}, shippingfee = #{shippingfee}, shipping_name = #{shipping_name}, consignee = #{consignee}, province = #{province}, city = #{city}, district = #{district},
+		address = #{address}, zipcode = #{zipcode}, tel = #{tel}, mobile = #{mobile}, email = #{email}, memo = #{memo}, payid = #{payid}, payname = #{payname}, exprdate = #{exprdate}</sql>
+	<sql id="orderby">order by createtime</sql>
+	
+	<select id="get" parameterType="string" resultType="order">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="order">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="ordersn != null">
+				and <include refid="setordersn"/>
+			</if>
+			<if test="paystatus != null">
+				and <include refid="setpaystatus"/>
+			</if>
+			<if test="orderstatus != null">
+				and <include refid="setorderstatus"/>
+			</if>
+			<if test="shippingstatus != null">
+				and <include refid="setshippingstatus"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="order">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>
+			</if>
+			<if test="userid != null">
+				and <include refid="setuserid"/>
+			</if>
+			<if test="userid_lk != null">
+				and <include refid="setuserid_lk"/>
+			</if>
+			<if test="username != null">
+				and <include refid="setusername"/>
+			</if>
+			<if test="username_lk != null">
+				and <include refid="setusername_lk"/>
+			</if>
+			<if test="ordersn != null">
+				and <include refid="setordersn"/>
+			</if>
+			<if test="ordersn_lk != null">
+				and <include refid="setordersn_lk"/>
+			</if>
+			<if test="paystatus != null">
+				and <include refid="setpaystatus"/>
+			</if>
+			<if test="orderstatus != null">
+				and <include refid="setorderstatus"/>
+			</if>
+			<if test="shippingstatus != null">
+				and <include refid="setshippingstatus"/>
+			</if>
+			<if test="minusprice != null">
+				and <include refid="setminusprice"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="order">
+		insert into
+		<include refid="table"/>
+		(<include refid="allfields"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="order">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="useruid != null">
+				<include refid="setuseruid"/>,
+			</if>
+			<if test="ordersn != null">
+				<include refid="setordersn"/>,
+			</if>
+			<if test="paystatus != null">
+				<include refid="setpaystatus"/>,
+			</if>
+			<if test="orderstatus != null">
+				<include refid="setorderstatus"/>,
+			</if>
+			<if test="shippingstatus != null">
+				<include refid="setshippingstatus"/>,
+			</if>
+			<if test="minusprice != null">
+				<include refid="setminusprice"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

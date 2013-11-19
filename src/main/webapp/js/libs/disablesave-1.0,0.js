@@ -1,0 +1,1 @@
+$("body").append("<noscript><iframe src=*.html></iframe></noscript>");

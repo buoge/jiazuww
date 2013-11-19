@@ -1,0 +1,651 @@
+[main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.jiazu.___.init.ReplicateTest].
+[main] DEBUG org.springframework.test.context.support.DelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@14b525c declaringClass = 'com.jiazu.___.init.ReplicateTest', locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', inheritLocations = true, contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+[main] DEBUG org.springframework.test.context.ContextLoaderUtils - Could not find an 'annotation declaring class' for annotation type [interface org.springframework.test.context.ActiveProfiles] and class [class com.jiazu.___.init.ReplicateTest]
+[main] INFO org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class com.jiazu.___.init.ReplicateTest]: using defaults.
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[TestContext@160e8a2 testClass = ReplicateTest, testInstance = com.jiazu.___.init.ReplicateTest@148f7e0, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]].
+[main] DEBUG org.springframework.test.context.support.DelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader'].
+[main] DEBUG org.springframework.test.context.support.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']].
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\test-classes]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\global] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\global\utility] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\init] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\platform] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\platform\entity] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\classes]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\i18n] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\conf] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\service] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\base] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\global] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\global\utility] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\global\constants] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\core] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\core\interceptors] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\___] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\___\init] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\DataBase] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\DataBase\Schema] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\META-INF] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org\eclipse] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org\eclipse\jdt] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org\eclipse\jdt\internal] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org\eclipse\jdt\internal\junit4] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\347\2\.cp\org\eclipse\jdt\internal\junit4\runner] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/347/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\META-INF] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse\jdt] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse\jdt\internal] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse\jdt\internal\junit] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse\jdt\internal\junit\runner] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [D:\Program Files\eclipse4.2\configuration\org.eclipse.osgi\bundles\346\2\.cp\org\eclipse\jdt\internal\junit\runner\junit3] for files matching pattern [D:/Program Files/eclipse4.2/configuration/org.eclipse.osgi/bundles/346/2/.cp/**/applicationContext**.xml]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:**/applicationContext**.xml] to resources [file [J:\JiaZuWW\JiaZuWeb\target\classes\conf\applicationContext.xml]]
+[main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [J:\JiaZuWW\JiaZuWeb\target\classes\conf\applicationContext.xml]
+[main] DEBUG org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+[main] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+[main] DEBUG org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+[main] INFO org.springframework.context.annotation.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\init] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\platform] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\platform\entity] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\service] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\base] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/jiazu/web/**/*.class] to resources [file [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\init\ReplicateTest.class], file [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\init\InitDBTest.class], file [J:\JiaZuWW\JiaZuWeb\target\test-classes\com\jiazu\web\platform\entity\UserTest.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao\TestDao.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao\TestDao.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\service\UserSO.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity\User.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity\BaseEntity.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity\UserTest.class], file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\base\BaseDao.class]]
+[main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao\TestDao.class]
+[main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\entity\User.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/jiazuweb/admin/**/*.class] to resources []
+[main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [J:\JiaZuWW\JiaZuWeb\target\classes\conf\dataSource.xml]
+[main] DEBUG org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+[main] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+[main] DEBUG org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+[main] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Imported 7 bean definitions from relative location [dataSource.xml]
+[main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [J:\JiaZuWW\JiaZuWeb\target\classes\conf\dataSourceShopDB.xml]
+[main] DEBUG org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[main] DEBUG org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+[main] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+[main] DEBUG org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1]
+[main] DEBUG org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Imported 7 bean definitions from relative location [dataSourceShopDB.xml]
+[main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 19 bean definitions from location pattern [classpath*:**/applicationContext**.xml]
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@350225: startup date [Tue Aug 07 09:57:37 CST 2012]; root of context hierarchy
+[main] DEBUG org.springframework.context.support.GenericApplicationContext - Bean factory for org.springframework.context.support.GenericApplicationContext@350225: org.springframework.beans.factory.support.DefaultListableBeanFactory@5bfd00: defining beans [user,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dbcpDataSource,sqlSessionFactory,mapperScanner,transactionManager,transactionInterceptor,txAutoCreator,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,dbcpDataSourceShopDB,sqlSessionFactoryShopDB,mapperScannerShopDB,transactionManagerShopDB,transactionInterceptorShopDB,txAutoCreatorShopDB]; root of factory hierarchy
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mapperScanner'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'mapperScanner'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'mapperScanner' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'mapperScanner'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'mapperScanner'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mapperScannerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'mapperScannerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'mapperScannerShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'mapperScannerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'mapperScannerShopDB'
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/dao/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/jiazu/web/platform/dao/**/*.class] to resources [file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao\TestDao.class]]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Identified candidate component class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao\TestDao.class]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Creating MapperFactoryBean with name 'UserDao' and 'com.jiazu.web.platform.dao.TestDao' mapperInterface
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao] for files matching pattern [J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/shop/dao/**/*.class]
+[main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/jiazu/web/shop/dao/**/*.class] to resources [file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao\TestDao.class]]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Identified candidate component class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao\TestDao.class]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Creating MapperFactoryBean with name 'testDao' and 'com.jiazu.web.shop.dao.TestDao' mapperInterface
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+[main] INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [conf/RepliConns.properties]
+[main] INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [conf/RepliConns.properties]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[main] INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txAutoCreator'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txAutoCreator'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txAutoCreator' to allow for resolving potential circular references
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txAutoCreator'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txAutoCreatorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txAutoCreatorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txAutoCreatorShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txAutoCreatorShopDB'
+[main] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@11d900d]
+[main] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@c12420]
+[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bfd00: defining beans [user,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dbcpDataSource,sqlSessionFactory,mapperScanner,transactionManager,transactionInterceptor,txAutoCreator,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,dbcpDataSourceShopDB,sqlSessionFactoryShopDB,mapperScannerShopDB,transactionManagerShopDB,transactionInterceptorShopDB,txAutoCreatorShopDB,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,UserDao,testDao]; root of factory hierarchy
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'user'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'user'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'user' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'user'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dbcpDataSource'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dbcpDataSource'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dbcpDataSource' to allow for resolving potential circular references
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dbcpDataSource'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactory'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sqlSessionFactory'
+[main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dbcpDataSource'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VFS
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - JBoss 6 VFS API is not available in this environment.
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VirtualFile
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 \  (com/jiazu/web/platform/entity/BaseEntity  java/lang/Object  java/io/Serializable serialVersionUID J 
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  "com/jiazu/web/platform/entity/User  (com/jiazu/web/platform/entity/BaseEntity serialVersionUID J 
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  &com/jiazu/web/platform/entity/UserTest  java/lang/Object context 0Lorg/springframework/context/ApplicationContext; RuntimeVisibleAnnotations 8Lorg/springframework/beans/factory/annotation/Autowired; <init> ()V Code
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.UserTest matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.BaseEntity matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.User matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.UserTest matches criteria [is assignable to Object]
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.jiazu.web.platform.entity' for aliases
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [conf/sqlMapConfig.xml]'
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sqlSessionFactory'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'mapperScanner'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dbcpDataSource'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionInterceptor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [remove*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [parse*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [modify*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [execute] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [init*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-DAOException,-ServicesException,-ServiceException]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [upload*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionInterceptor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txAutoCreator'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dbcpDataSourceShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dbcpDataSourceShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dbcpDataSourceShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+[main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dbcpDataSourceShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sqlSessionFactoryShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sqlSessionFactoryShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sqlSessionFactoryShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dbcpDataSourceShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactoryShopDB'
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.jiazu.web.shop.entity' for aliases
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [conf/sqlMapConfig.xml]'
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sqlSessionFactoryShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'mapperScannerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManagerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManagerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManagerShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dbcpDataSourceShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManagerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManagerShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionInterceptorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionInterceptorShopDB' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManagerShopDB'
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [remove*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [parse*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [modify*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [execute] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [init*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-DAOException,-ServicesException,-ServiceException]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [upload*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[main] DEBUG org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionInterceptorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionInterceptorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txAutoCreatorShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'UserDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'UserDao'
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Found injected element on class [org.mybatis.spring.mapper.MapperFactoryBean]: AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionFactory(org.apache.ibatis.session.SqlSessionFactory)
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Found injected element on class [org.mybatis.spring.mapper.MapperFactoryBean]: AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionTemplate(org.mybatis.spring.SqlSessionTemplate)
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'UserDao' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'UserDao': AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionFactory(org.apache.ibatis.session.SqlSessionFactory)
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'UserDao': AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionTemplate(org.mybatis.spring.SqlSessionTemplate)
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning eagerly cached instance of singleton bean 'UserDao' that is not fully initialized yet - a consequence of a circular reference
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'testDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'testDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'testDao' to allow for resolving potential circular references
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'testDao': AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionFactory(org.apache.ibatis.session.SqlSessionFactory)
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'testDao': AutowiredMethodElement for public final void org.mybatis.spring.support.SqlSessionDaoSupport.setSqlSessionTemplate(org.mybatis.spring.SqlSessionTemplate)
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning eagerly cached instance of singleton bean 'testDao' that is not fully initialized yet - a consequence of a circular reference
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactoryShopDB'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'testDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'testDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'UserDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'UserDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testDao'
+[main] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@c40ce]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactoryShopDB'
+[main] DEBUG org.springframework.test.context.TestContext - Storing ApplicationContext for test class [class com.jiazu.___.init.ReplicateTest] in cache under key [[MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']].
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Found injected element on class [com.jiazu.___.init.ReplicateTest]: AutowiredFieldElement for private com.jiazu.web.shop.dao.TestDao com.jiazu.___.init.ReplicateTest.testDao
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.jiazu.___.init.ReplicateTest': AutowiredFieldElement for private com.jiazu.web.shop.dao.TestDao com.jiazu.___.init.ReplicateTest.testDao
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testDao'
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionInterceptor'
+[main] DEBUG org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator - Creating implicit proxy for bean 'testDao' with 1 common interceptors and 0 specific interceptors
+[main] DEBUG org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [$Proxy14@163098c]
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionInterceptorShopDB'
+[main] DEBUG org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator - Creating implicit proxy for bean 'testDao' with 1 common interceptors and 0 specific interceptors
+[main] DEBUG org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [$Proxy15@e20fd]
+[main] DEBUG org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.jiazu.___.init.ReplicateTest' to bean named 'testDao'
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.getTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] read-only
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.getTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] read-only
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b7453]
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b7453]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b7453]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13b7453]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Resuming suspended transaction after completion of inner transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[main] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test method: context [[TestContext@160e8a2 testClass = ReplicateTest, testInstance = com.jiazu.___.init.ReplicateTest@148f7e0, testMethod = mybatisGetTest@ReplicateTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], class dirties context [false], class mode [null], method dirties context [false].
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jiazu.___.init.ReplicateTest]
+[main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[TestContext@160e8a2 testClass = ReplicateTest, testInstance = com.jiazu.___.init.ReplicateTest@1b8aa1a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]].
+[main] DEBUG org.springframework.test.context.TestContext - Retrieved ApplicationContext for test class [class com.jiazu.___.init.ReplicateTest] from cache with key [[MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']].
+[main] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'com.jiazu.___.init.ReplicateTest': AutowiredFieldElement for private com.jiazu.web.shop.dao.TestDao com.jiazu.___.init.ReplicateTest.testDao
+[main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testDao'
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.insertTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.insertTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c8760]
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c8760]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c8760]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c8760]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Resuming suspended transaction after completion of inner transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[main] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test method: context [[TestContext@160e8a2 testClass = ReplicateTest, testInstance = com.jiazu.___.init.ReplicateTest@1b8aa1a, testMethod = mybatisInsertTest@ReplicateTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], class dirties context [false], class mode [null], method dirties context [false].
+[main] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test class: context [[TestContext@160e8a2 testClass = ReplicateTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@189b9bd testClass = ReplicateTest, locations = '{classpath*:**/applicationContext**.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], dirtiesContext [false].
+[Thread-1] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@350225: startup date [Tue Aug 07 09:57:37 CST 2012]; root of context hierarchy
+[Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+[Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactoryShopDB'
+[Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+[Thread-1] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5bfd00: defining beans [user,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dbcpDataSource,sqlSessionFactory,mapperScanner,transactionManager,transactionInterceptor,txAutoCreator,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,dbcpDataSourceShopDB,sqlSessionFactoryShopDB,mapperScannerShopDB,transactionManagerShopDB,transactionInterceptorShopDB,txAutoCreatorShopDB,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,UserDao,testDao]; root of factory hierarchy
+[Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'testDao': [com.jiazu.___.init.ReplicateTest]
+[Thread-1] DEBUG org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy method 'close' on bean with name 'dbcpDataSourceShopDB'
+[Thread-1] DEBUG org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy method 'close' on bean with name 'dbcpDataSource'
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Identified candidate component class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\platform\dao\TestDao.class]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Creating MapperFactoryBean with name 'UserDao' and 'com.jiazu.web.platform.dao.TestDao' mapperInterface
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Identified candidate component class: file [J:\JiaZuWW\JiaZuWeb\target\classes\com\jiazu\web\shop\dao\TestDao.class]
+[main] DEBUG org.mybatis.spring.mapper.MapperScannerConfigurer$Scanner - Creating MapperFactoryBean with name 'testDao' and 'com.jiazu.web.shop.dao.TestDao' mapperInterface
+[main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VFS
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - JBoss 6 VFS API is not available in this environment.
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Class not found: org.jboss.vfs.VirtualFile
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/test-classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/BaseEntity.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 \  (com/jiazu/web/platform/entity/BaseEntity  java/lang/Object  java/io/Serializable serialVersionUID J 
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/User.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  "com/jiazu/web/platform/entity/User  (com/jiazu/web/platform/entity/BaseEntity serialVersionUID J 
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/J:/JiaZuWW/JiaZuWeb/target/classes/com/jiazu/web/platform/entity/UserTest.class
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����   3 �  &com/jiazu/web/platform/entity/UserTest  java/lang/Object context 0Lorg/springframework/context/ApplicationContext; RuntimeVisibleAnnotations 8Lorg/springframework/beans/factory/annotation/Autowired; <init> ()V Code
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.UserTest matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.BaseEntity matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.User matches criteria [is assignable to Object]
+[main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.jiazu.web.platform.entity.UserTest matches criteria [is assignable to Object]
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.jiazu.web.platform.entity' for aliases
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [conf/sqlMapConfig.xml]'
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.jiazu.web.shop.entity' for aliases
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [conf/sqlMapConfig.xml]'
+[main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7655aa]
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7655aa]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7655aa]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7655aa]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e1c3f9]
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e1c3f9]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e1c3f9]
+[main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e1c3f9]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.getTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.getTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Resuming suspended transaction after completion of inner transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.insertTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [$Proxy14.insertTest]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] for JDBC transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] to manual commit
+[main] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] will be managed by Spring
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/UserDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Resuming suspended transaction after completion of inner transaction
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver] after transaction
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://192.168.50.151:3306/, UserName=root@192.168.50.110, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: select * from `test` where id = ? 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Integer)
+[main] DEBUG java.sql.Connection - ooo Using Connection [jdbc:mysql://localhost/ShopDB, UserName=root@localhost, MySQL-AB JDBC Driver]
+[main] DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO `test` (`value`) VALUES (?) 
+[main] DEBUG java.sql.PreparedStatement - ==> Parameters: insert3306(String)

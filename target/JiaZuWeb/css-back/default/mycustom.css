@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.imgsblock {display: table; width: 100%;}
+.imgsblock ul {}
+.imgsblock ul li {float: left; position: relative;}
+.imgsblock li span {display: none;}
+.imgsblock li:HOVER span { display: block; text-align:right; position: absolute; left: 3px; bottom:0; background-color: #CCC; width: 97%; height: 25px;opacity: .7;filter: alpha(opacity=70);}
+.imgsblock li:HOVER span a {color: red !important; font-weight:bold; float: right;}
+.imgsblock a {float: left; position: relative; border: 1px solid #ccc; padding: 1px; margin: 3px;}
+.imgsblock img {width: 180px; height: 150px; }
+.imgsblock a label { position: absolute; left: 0; right: 0; width: 100%; height: 100%; text-indent: -999px;} 
+.imgsblock:HOVER a label {background: #000;opacity: .3;filter: alpha(opacity=30);}
+.imgsblock a:HOVER label {background: none; cursor: pointer;}
+#txtdesc {width:500px; height: 30px;}

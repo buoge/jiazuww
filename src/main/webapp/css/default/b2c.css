@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.boxs { margin: 8px; height: 100%;}
+.widebox { width: 99% !important; background:#f4f4f4; border: 1px solid #ccc; overflow: hidden;}
+h2 { font-size: 2em; display: inline; line-height: 1.5em; margin-left: 10px;}
+.boxs span,label { color: #900;}
+.tag {font-size: 12px; margin-left: 6px;}
+a.more { float: right;font-size: 1.5em; margin: 15px 9px 0 0; color: #900;}
+.vline { border-left: 1px solid #ccc; width: 0px; height: 100%; float: left; position: absolute; left: 50%;}
+.leftbox { width: 100%; height:100%; float: left; }
+.block {border-bottom: 1px solid #e4e4e4; width: 100%; display: table; padding-bottom: 9px;}
+.prod { background: white; width: 140px; height: 236px; padding: 3px; float: left; margin: 6px 0 0px 6px; border: 1px solid #ddd; overflow: hidden;}
+.prod .imgbox { display:table; height: 140px; clear: both; max-width: 140px; clear: both; margin-top: 3px;}
+.leftbox .price {}
+.formerprice {text-decoration:line-through;}
+.leftbox .prod h3 {color: #39c; font-size: 1.1em; height: 50px; margin: 3px 0 0 0;}
+.leftbox .prod p {line-height: 30px;text-align: right;}
+.rightbox { width: 100%; height:100%; float: left;}
+.book { background: white; width: 150px; height: 320px; border: 1px solid #ddd; float: left; margin: 6px 0 0px 5px; *margin-left: 4px;}
+.book .imgbox { display:table; height: 140px; clear: both; clear: both; margin-top: 3px; *text-align: center;}
+.book p {font-size: 1.1em; color: #666; text-indent: 1em;}
+.book p span {font-size: 12px;}
+.book h3 {color: #333; font-weight:bold; font-size: 1.1em; height: 60px; margin: 3px 0 0 0;}
+.book .recommend {border-top: 1px dashed #ccc; margin: 3px; color: #666;}
+.rightbox .list {padding: auto;}
+ol.software {list-style-type: decimal; list-style-position:inside; width: 100%; margin: auto; display: table;}
+ol.software li {width: 100%;}
+ol.software li:HOVER { background: white;}
+ol.software li h3 {width: 360px; height: 100%; line-height: 30px;display: inline;}
+ol.software li a:HOVER {text-decoration: none;}
+
+/* b2c list */
+.resultbox {width: 800px; float: left; display: table;}
+.resultbox h1 {width: 100%; height: 28px; font-size:1.3em; font-weight:bold; line-height:30px; text-indent:1em; color:white; background: transparent url(../../imgs/default/redwhitebar.png) no-repeat;}
+.resultbox .resultlist { display: table; width: 100%; margin-top: 30px;}
+.resultbox ol.software li:HOVER {background: #eee;} 
+.resultbox ol.software {list-style-type: disc;}
+.hotbox {float: right;width: 160px;}
+.hotbox h1 { text-align: center; background: #eee;color: #666633; line-height: 30px; font-size: 1.1em;}
+.hotbox .hotlist {display: table;}

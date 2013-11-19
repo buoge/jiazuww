@@ -1,0 +1,17 @@
+ul.heads { clear: both;}
+ul.heads li {float: left; margin: 3px;}
+ul.heads div,span {margin: 0;}
+.heads .head1 { width: 50px; height:50px; position: relative; cursor: pointer; margin: 3px;}
+.heads .head1 .tagbg {position:absolute; width:100%;  height: 15px; left: 0; bottom: 0; background: #000; opacity: .5;filter: alpha(opacity=50);}
+.heads .head1 .tag {font-size: 1em; position: absolute; left: 0; bottom: 0; white-space: pre; height: 15px; line-height: 15px;color: white;}
+.block table {}
+.block table td {border: 1px solid #ccc;}
+.block table td.columnname {width: 80px; text-align:center; vertical-align: top; line-height: 80px;}
+#mymembers div {margin: 0;}
+#mymembers input {margin: 3px;}
+#mymembers th {height: 45px;}
+#txtmsg {width: 400px; height: 30px;}
+#msgblock {width: 530px; float: left;}
+#msgblock input { float: right; margin-top: 15px;}
+#dolink {float: right; margin-top: 15px !important;}
+#dolink a { display: block; padding: 1px; margin: 3px; background: #efefef; border: 1px solid #ccc; float: left;}

@@ -1,0 +1,26 @@
+﻿/* CSS Document */
+/*Theme Name:Admin login css style*/
+/*Description:This is a style file for login page*/
+/*author:Billbsky TEL：0633-8987010*/
+/*creation time:2008-11-26*/
+/*location:Www.RzMeiTan.Cn */
+/*last modify:2008-11-26*/
+/* overwrite base style ---------------------------------------------------------------------**/
+body {margin: 0; background-color: #fff;}
+/* style of login pages ---------------------------------------------------------------**/
+.txt {background-attachment: scroll !important; background-repeat: no-repeat; overflow: hidden;}
+.body {margin: 0;}
+#headarea { display:none}
+#bodyarea {padding: 0; height: 400px;}
+#bodyarea .mybody {width:100%; margin: 0; text-align: center;}
+#bodyarea .login { width:600px; height:300px; margin-top:100px; margin-bottom:60px; border:solid 1px #999999; overflow: hidden;}
+#bodyarea .login .left { float:left; width:160px; height:100%; background:transparent url(../../imgs/admin/login.gif) no-repeat left top;}
+#bodyarea .login .right { float:left; width:389px; height:100%; position: relative;}
+#bodyarea .login .right .errlogin {position: absolute; left: 90px; top: 80px; color: red; background: transparent;}
+#bodyarea .login .right ul { width:390px; margin:auto; margin-top:100px; margin-left: 30px;}
+#bodyarea .login .right ul li { height:50px; line-height:50px;}
+#bodyarea .login .right ul li label {}
+#bodyarea .login .right ul li input.btnlogin { border:solid 1px #FFF; line-height:1.5em; background:white; width:60px;}
+#footarea { text-align: center;}
+#footarea .mybody{}
+#footarea .block {width:600px; margin-top:60px;}

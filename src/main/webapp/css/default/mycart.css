@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.boxs { margin: 8px; height: 100%; color: #000;}
+.widebox { width: 99% !important; overflow: hidden;}
+.widebox h2 { width:70%; height:36px; font-size: 1.5em; line-height: 36px; margin-left: 360px; position: relative;margin-top: 9px;}
+.widebox h2 span {position: absolute; text-indent:1.5em; height: 100%; width: 200px; background: transparent url(../../imgs/default/formpanel.png) -554px -270px no-repeat; float: left;}
+.widebox h2 span.first { left: 0;}
+.widebox h2 span.first .bg { position: absolute; left:0;top:0; width: 30px; height:100%; background-color: #e9e9e9;}
+.widebox h2 span.here .bg { position: absolute; width: 30px; height:100%; background-color: #d52d2d;}
+.widebox h2 span.second { left: 190px;}
+.widebox h2 span.third { left: 380px;}
+.widebox h2 span.here {color:white; background: transparent url(../../imgs/default/formpanel.png) -344px -271px no-repeat; float: left;}
+.widebox h1 {border-top: 1px solid #ccc; width:95%; display:block; margin:auto; font-size: 2em; line-height: 2em; margin-top: 6px; }
+.widebox table { margin-top: 6px; border: 1px solid #ddd; width: 95%;}
+.widebox table thead {background-color: #f3f3f3; border-bottom: 1px solid #ddd;}
+.widebox table thead tr { height: 40px; color: #666;}
+.widebox table tbody tr { height: 60px; background-color: #fffdee;}
+.widebox table tbody .goleft {display:inline-block; margin-left:20px; width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -360px no-repeat; float: left;_margin-top:-9px;}
+.widebox table tbody .goright {display:inline-block;width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -384px no-repeat; float: left;  _margin-top:-9px;}
+.widebox table tbody .txtnum { height: 25px; line-height:15px; _padding-top: 6px;}
+.widebox table tbody a {color: #36c;}
+.widebox table tr th,td { text-align: center; padding:1px; vertical-align:middle; height:40px;}
+.widebox table tfoot {background-color: #f3f3f3; border-top: 1px solid #ddd;}
+.linkdel {padding-left:15px;  line-height:30px; background: transparent url(../../imgs/default/verticalicons.png) -87px -597px no-repeat;}
+.btnbox {display: table; width: 250px; float: right; margin:9px; margin-right: 30px;}
+a.gobuy {width: 90px; height: 32px; line-height:32px; display:block; margin:3px;  text-align:center; background: transparent url(../../imgs/default/formpanel.png) 0px -270px no-repeat; float: left;}
+a.gobuy:HOVER {text-decoration: none;}
+.checkout {width: 125px; height: 35px; color: white; font-size: 1.1em; font-weight:bold; text-align:center; line-height: 35px;background: transparent url(../../imgs/default/formpanel.png) -100px -270px no-repeat; float: right;}
+
+.emptybox {clear: both; width: 600px; height: 150px; margin:60px auto 90px auto; background: transparent url(../../imgs/default/verticalicons.png) 0px -680px no-repeat; border: 2px solid red;}
+.emptybox .word { margin-left: 150px; margin-top:10px; width: 390px;}
+.word h3 { font-size: 1.3em; font-weight: bolder; line-height: 60px;}
+.word p {color: #000;line-height: 25px; font-size: 1.1em;}
+.word a {color: #36c;}

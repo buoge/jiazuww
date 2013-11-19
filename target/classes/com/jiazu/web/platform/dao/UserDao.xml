@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.platform.dao.UserDao">
+
+	<sql id="basecolumns">`uid`,`oid`,`createtime`,`updatetime`</sql>
+	<sql id="allcolumns">`oid`,`uid`,`userid`,`groupuid`,`account`,`password`,`name`,`gender`,`realname`,`birthday`,`email`,`intro`,`thumb`,`avatar`,`original`,`signed`,`qq`,`msn`,`phone`,`mobile`,`salary`,`status`,`resetpwd`,`logincount`,`educount`,`eventcount`,`groupcount`,`msgcount`,`errorlasttime`,`errorcount`,`errorip`,`lastlogintime`,`lastloginip`,`registerip`,`createtime`,`updatetime`</sql>
+	<sql id="fromtable">from `user`</sql>
+	<sql id="whereid">where `uid` = #{uid}</sql>
+	<sql id="allparams">#{oid},#{uid},#{userid},#{groupuid},#{account},#{password},#{name},#{gender},#{realname},#{birthday},#{email},#{intro},#{thumb},#{avatar},#{original},#{signed},#{qq},#{msn},#{phone},#{mobile},#{salary},#{status},#{resetpwd},#{logincount},#{educount},#{eventcount},#{groupcount},#{msgcount},#{errorlasttime},#{errorcount},#{errorip},#{lastlogintime},#{lastloginip},#{registerip},#{createTime},#{updateTime}</sql>
+	<sql id="selectsummoney">sum(`account`)</sql>
+	<sql id="selectcount">count(`uid`)</sql>
+	<!-- ,#{groupuid} -->
+	<sql id="setaccount">`account` = #{account}</sql>
+	<sql id="setuserid">userid = #{userid}</sql>
+	<sql id="setuserid_lk">userid like CONCAT('%',#{userid_lk},'%')</sql>
+	<sql id="setpwd">`password` = #{password}</sql>
+	<sql id="setcreatetime">`createtime` = #{createTime}</sql>
+	<sql id="setname"> `name` = #{name}</sql>
+	<sql id="setname_lk"> `name` like CONCAT('%',#{name_lk},'%')</sql>
+	<sql id="setgender"> `gender` = #{gender}</sql>
+	<sql id="setrealname"> `realname` = #{realname}</sql>
+	<sql id="setbirthday"> `birthday` = #{birthday}</sql>
+	<sql id="setemail"> `email` = #{email}</sql>
+	<sql id="setemail_lk"> `email` like CONCAT('%',#{email_lk},'%')</sql>
+	<sql id="setintro">`intro` = #{intro}</sql>
+	<sql id="setthumb">`thumb` = #{thumb}</sql>
+	<sql id="setavatar">`avatar` = #{avatar}</sql>
+	<sql id="setoriginal"> `original` = #{original}</sql>
+	<sql id="setsigned">`signed` = #{signed}</sql>
+	<sql id="setqq">`qq` = #{qq}</sql>
+	<sql id="setmsn">`msn` = #{msn}</sql>
+	<sql id="setphone">`phone` = #{phone}</sql>
+	<sql id="setmobile"> `mobile` = #{mobile}</sql>
+	<sql id="setmobile_lk"> `mobile` like CONCAT('%',#{mobile_lk},'%')</sql>
+	<sql id="setsalary">`salary` = #{salary}</sql>
+	<sql id="setstatus"> `status` = #{status}</sql>
+	<sql id="setresetpwd">`resetpwd` = #{resetpwd}</sql>
+	<sql id="setlogincount">`logincount` = #{logincount}</sql>
+	<sql id="seteducount"> `educount` = #{educount}</sql>
+	<sql id="seteventcount"> `eventcount` = #{eventcount}</sql>
+	<sql id="setgroupcount">`groupcount` = #{groupcount}</sql>
+	<sql id="setmsgcount"> `msgcount` = #{msgcount}</sql>
+	<sql id="seterrorlasttime"> `errorlasttime` = #{errorlasttime}</sql>
+	<sql id="seterrorcount">`errorcount` = #{errorcount}</sql>
+	<sql id="seterrorip">`errorip` = #{errorip}</sql>
+	<sql id="setlastlogintime">`lastlogintime` = #{lastlogintime}</sql>
+	<sql id="setlastloginip">`lastloginip` = #{lastloginip}</sql>
+	<sql id="setregisterip">`registerip` = #{registerip}</sql>
+	<sql id="allsets">set <include refid="setaccount"/>,  <include refid="setpwd"/>,  `groupuid` = #{groupuid}, <include refid="setname"/>, <include refid="setgender"/>, <include refid="setrealname"/>, <include refid="setbirthday"/>, <include refid="setemail"/>, <include refid="setintro"/>, <include refid="setthumb"/>, <include refid="setavatar"/> , <include refid="setoriginal"/>,  <include refid="setsigned"/>, <include refid="setqq"/>, <include refid="setmsn"/>,  <include refid="setphone"/>, <include refid="setmobile"/>,  <include refid="setsalary"/>, <include refid="setstatus"/>, <include refid="setresetpwd"/>,  <include refid="setlogincount"/>, <include refid="seteducount"/>, <include refid="seteventcount"/>, <include refid="setgroupcount"/> , <include refid="setmsgcount"/>, <include refid="seterrorlasttime"/>, <include refid="seterrorcount"/> ,  <include refid="seterrorip"/>, <include refid="setlastlogintime"/> , <include refid="setlastloginip"/> ,  <include refid="setregisterip"/>,  <include refid="setcreatetime"/></sql>
+	<!-- `groupuid` = #{groupuid},  -->
+	<sql id="orderby">order by createtime</sql>
+	<sql id="joinselectusercolumns">u.`oid`,u.`uid`,u.`userid`,u.`groupuid`,u.`account`,u.`password`,u.`name`,u.`gender`,u.`realname`,u.`birthday`,u.`email`,u.`intro`,u.`thumb`,u.`avatar`,u.`original`,u.`signed`,u.`qq`,u.`msn`,u.`phone`,u.`mobile`,u.`salary`,u.`status`,u.`resetpwd`,u.`logincount`,u.`educount`,u.`eventcount`,u.`groupcount`,u.`msgcount`,u.`errorlasttime`,u.`errorcount`,u.`errorip`,u.`lastlogintime`,u.`lastloginip`,u.`registerip`,u.`createtime`,u.`updatetime`</sql>
+	<sql id="jointableuser">`user` u</sql>
+	<sql id="jointablemember">jiazumember m</sql>
+	<sql id="joinonusermemberuid">u.uid = m.useruid</sql>
+	<sql id="joinonmemberuid">m.`uid` != #{uid}</sql>
+	<sql id="joinsetusername">(u.`userid` LIKE CONCAT('%',#{name},'%') or u.`name` LIKE CONCAT('%',#{name},'%'))</sql>
+	<sql id="joinsetmemberuid">u.`uid` not in (select `useruid` from jiazumember where `uid` = #{uid})</sql>
+	<sql id="setuserstatus"> u.`status` = #{status}</sql>
+	
+	<select id="get" parameterType="string" resultType="user">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getUserbyOid" parameterType="int" resultType="user">
+		select
+		<include refid="allcolumns" />
+		from `user` where `oid` = #{oid}
+	</select>
+	
+	<select id="getSumMoney" parameterType="hashMap" resultType="int">
+		select
+		<include refid="selectsummoney" />
+		from `user`
+	</select>
+	
+	<select id="getCount" parameterType="hashMap" resultType="int">
+		select
+		<include refid="selectcount" />
+		from `user`
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="user">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<where>
+			<if test="userid != null">
+				<include refid="setuserid"/>
+			</if>
+			<if test="password != null">
+				and <include refid="setpwd"/>
+			</if>
+			<if test="account != null">
+				and <include refid="setaccount"/>
+			</if>
+			<if test="name != null">
+				and <include refid="setname"/>
+			</if>
+			<if test="gender != null">
+				and <include refid="setgender"/>
+			</if>
+			<if test="realname != null">
+				and <include refid="setrealname"/>
+			</if>
+			<if test="birthday != null">
+				and <include refid="setbirthday"/>
+			</if>
+			<if test="email != null">
+				and <include refid="setemail"/>
+			</if>
+			<if test="phone != null">
+				and <include refid="setphone"/>
+			</if>
+			<if test="mobile != null">
+				and <include refid="setmobile"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setstatus"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+
+	<select id="getUserbyUseridPwd" parameterType="hashMap" resultType="user">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<where>
+			<if test="userid != null">
+				<include refid="setuserid"/>
+			</if>
+			<if test="password != null">
+				and <include refid="setpwd"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getUidByUserid" parameterType="string" resultType="string">
+		select `uid`
+		<include refid="fromtable"/>
+		where
+		<include refid="setuserid"/>
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="user">
+		select
+		<include refid="allcolumns" />
+		<include refid="fromtable"/>
+		<where>
+			<if test="userid != null">
+				<include refid="setuserid"/>
+			</if>
+			<if test="userid_lk != null">
+				and <include refid="setuserid_lk"/>
+			</if>
+			<if test="account != null">
+				and <include refid="setaccount"/>
+			</if>
+			<if test="password != null">
+				and <include refid="setpwd"/>
+			</if>
+			<if test="name != null">
+				and <include refid="setname"/>
+			</if>
+			<if test="name_lk != null">
+				and <include refid="setname_lk"/>
+			</if>
+			<if test="gender != null">
+				and <include refid="setgender"/>
+			</if>
+			<if test="realname != null">
+				and <include refid="setrealname"/>
+			</if>
+			<if test="birthday != null">
+				and <include refid="setbirthday"/>
+			</if>
+			<if test="email != null">
+				and <include refid="setemail"/>
+			</if>
+			<if test="email_lk != null">
+				and <include refid="setemail_lk"/>
+			</if>
+			<if test="phone != null">
+				and <include refid="setphone"/>
+			</if>
+			<if test="mobile_lk != null">
+				and <include refid="setmobile_lk"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setstatus"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}<!-- ${orderby} -->
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<select id="getListByMemberSearch" parameterType="hashMap" resultType="user">
+		select
+		<include refid="joinselectusercolumns" />
+		from
+		<include refid="jointableuser"/> left join
+		<include refid="jointablemember"/>
+		<trim prefix="on" prefixOverrides="and">
+			<include refid="joinonusermemberuid"/>
+			<if test="uid != null">
+				and <include refid="joinonmemberuid"/>
+			</if>
+		</trim>
+		<where>
+			<if test="uid != null">
+				and <include refid="joinsetmemberuid"/>
+			</if>
+			<if test="name != null">
+				and <include refid="joinsetusername"/>
+			</if>
+			<if test="account != null">
+				and <include refid="setaccount"/>
+			</if>
+			<if test="gender != null">
+				and <include refid="setgender"/>
+			</if>
+			<if test="realname != null">
+				and <include refid="setrealname"/>
+			</if>
+			<if test="birthday != null">
+				and <include refid="setbirthday"/>
+			</if>
+			<if test="email != null">
+				and <include refid="setemail"/>
+			</if>
+			<if test="phone != null">
+				and <include refid="setphone"/>
+			</if>
+			<if test="mobile != null">
+				and <include refid="setmobile"/>
+			</if>
+			<if test="status != null">
+				and <include refid="setuserstatus"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}<!-- ${orderby} -->
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="user">
+		insert into `user` (<include refid="allcolumns"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="user">
+		update `user`
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update `user`
+		<set>
+			<if test="password != null">
+				<include refid="setpwd"/>,
+			</if>
+			<if test="account != null">
+				<include refid="setaccount"/>,
+			</if>
+			<if test="name != null">
+				<include refid="setname"/>,
+			</if>
+			<if test="gender != null">
+				<include refid="setgender"/>,
+			</if>
+			<if test="realname != null">
+				<include refid="setrealname"/>,
+			</if>
+			<if test="birthday != null">
+				<include refid="setbirthday"/>,
+			</if>
+			<if test="email != null">
+				<include refid="setemail"/>,
+			</if>
+			<if test="intro != null">
+				<include refid="setintro"/>,
+			</if>
+			<if test="thumb != null">
+				<include refid="setthumb"/>,
+			</if>
+			<if test="avatar != null">
+				<include refid="setavatar"/>,
+			</if>
+			<if test="original != null">
+				<include refid="setoriginal"/>,
+			</if>
+			<if test="signed != null">
+				<include refid="setsigned"/>,
+			</if>
+			<if test="qq != null">
+				<include refid="setqq"/>,
+			</if>
+			<if test="msn != null">
+				<include refid="setmsn"/>,
+			</if>
+			<if test="phone != null">
+				<include refid="setphone"/>,
+			</if>
+			<if test="mobile != null">
+				<include refid="setmobile"/>,
+			</if>
+			<if test="salary != null">
+				<include refid="setsalary"/>,
+			</if>
+			<if test="status != null">
+				<include refid="setstatus"/>,
+			</if>
+			<if test="resetpwd != null">
+				<include refid="setresetpwd"/>,
+			</if>
+			<if test="logincount != null">
+				<include refid="setlogincount"/>,
+			</if>
+			<if test="educount != null">
+				<include refid="seteducount"/>,
+			</if>
+			<if test="eventcount != null">
+				<include refid="seteventcount"/>,
+			</if>
+			<if test="groupcount != null">
+				<include refid="setgroupcount"/>,
+			</if>
+			<if test="msgcount != null">
+				<include refid="setmsgcount"/>,
+			</if>
+			<if test="errorlasttime != null">
+				<include refid="seterrorlasttime"/>,
+			</if>
+			<if test="errorcount != null">
+				<include refid="seterrorcount"/>,
+			</if>
+			<if test="errorip != null">
+				<include refid="seterrorip"/>,
+			</if>
+			<if test="lastlogintime != null">
+				<include refid="setlastlogintime"/>,
+			</if>
+			<if test="lastloginip != null">
+				<include refid="setlastloginip"/>,
+			</if>
+			<if test="registerip != null">
+				<include refid="setregisterip"/>,
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete <include refid="fromtable"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>

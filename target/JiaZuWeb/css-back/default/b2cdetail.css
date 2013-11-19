@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.boxs { margin: 8px; height: 100%; color: #000;}
+.widebox { width: 99% !important; overflow: hidden;}
+h2 { width:100%; font-size: 2em; line-height: 1.5em; margin-left: 10px; border-bottom: 1px solid #ccc;}
+.tag {font-size: 0.65em; margin-left: 6px;}
+.boxbody { margin: 6px 0 6px 0; width: 100%; height: 100%;}
+h1 { width:100%; font-size: 1.5em; line-height: 1.5em; margin-left: 10px; text-align: center;}
+.product { width: 100%; height: 100%; display: table;}
+.preview { float: left; width: 390px; height: 430px;}
+.bigpic { border: 1px solid #ccc; width: 360px; height: 360px; position: relative;}
+.bigpic .zoom {position: relative;}
+.picsbar { width: 100%; display: table;}
+.picsbar .goleft { height: 55px; width: 15px; display:block; float:left; margin-left:20px; *margin-left:10px; background: transparent url(../../imgs/default/verticalicons.png) 0px -355px no-repeat;}
+.picsbar .goright { height: 55px; width: 15px; display:block; float:left; background: transparent url(../../imgs/default/verticalicons.png) 0px -355px no-repeat;}
+.littlepics { float: left; width: 310px; *width: 320px; height: 60px; margin-left: 6px; margin-right: 6px; overflow: hidden;}
+.littlepics a { display: block; border: 1px solid #ccc; float: left; margin: 3px;}
+.littlepics table {margin: 0;}
+.infobox { float: left; height: 100%; display: table;}
+.info {width: 100%; height: 300px; margin-left: 0;}
+.info p {font-size: 1.1em; line-height: 30px;}
+.info .formerprice {color: #000; font-size: 1.02em; text-decoration: line-through;}
+.info .price {color: #f60; font-size: 1.1em; font-weight: bold;}
+.info .scorebg { width: 60px; height: 11px; overflow:hidden; background: white url(../../imgs/default/verticalicons.png) 0px -441px no-repeat; float: left; margin: 6px 6px 0 6px;}
+.info .score { width: 100%; height: 100%; background: white url(../../imgs/default/verticalicons.png) 0px -430px no-repeat; float: left;}
+.infobox p {font-size: 1.1em; line-height: 30px; height: 30px;}
+.infobox .goleft {display:inline-block; width: 23px; height: 23px;background: white url(../../imgs/default/verticalicons.png) -50px -360px no-repeat; float: left; }
+.infobox .goright {display:inline-block;width: 23px; height: 23px;background: white url(../../imgs/default/verticalicons.png) -50px -384px no-repeat; float: left;}
+.infobox .txtnum { height: 30px; line-height: 30px; }
+.infobox .txtnum:FOCUS { height: 30px !important; line-height: 30px;}
+.btnbuy { float: left; margin-left:60px; width: 126px; height: 36px; background: #f90 url(../../imgs/default/formpanel.png) -486px -128px no-repeat; font-size: 1.2em; color: white; font-weight: bold;}
+.btnaddcard { float: left; margin-left:20px; width: 127px; height: 36px; background: transparent url(../../imgs/default/formpanel.png) -486px -173px no-repeat;}
+.introduce { min-height: 300px;}
+.introduce h2 { font-size: 15px; line-height:36px; text-indent: 10px; color: white; font-weight: bold;width: 100%; height: 30px;  background: transparent url(../../imgs/default/formpanel.png) -712px -84px no-repeat; border-bottom: 2px solid #c00;}
+.introduce div,p {text-indent: 2em; line-height: 25px;}
+
+.comments {width: 90%; background-color: #efefef; border: 1px solid #ccc; margin: 10px 10px 0px 30px; padding: 6px;}
+.comments textarea { width: 95%; height: 30px;}
+.comments .leftmsg { color: red; line-height: 30px; float: left;}
+.comments .btmbar { margin-right: 20px; height:30px; line-height:30px; overflow: hidden; float: right;}
+.comments .btmbar #btncomment {background:transparent url(../../imgs/default/formpanel.png) no-repeat scroll -612px -330px; cursor: pointer; width: 60px; height: 20px;}
+#arglist {clear: both; display: table; margin: 9px auto auto auto;}
+.argument { width:100%; margin:3px; float: left; text-align: left;}
+.argue h2 { font-size: 15px; line-height:36px; text-indent: 10px; color: white; font-weight: bold;width: 100%; height: 30px;  background: transparent url(../../imgs/default/formpanel.png) -712px -84px no-repeat; border-bottom: 2px solid #c00;}
+.argument { width:90%; display:table; text-align: left; border-bottom: 1px solid #ccc;}
+.headimg { border: 1px solid #ccc; padding: 2px; float: left; margin: 5px;}
+.word {height: 50px; width:700px; float: left; clear: right; margin-top: 15px;}
+.word .name {color: #060;}
+.word .content { margin-left: 12px;}
+.date {float: left; width: 700px; text-align: right;}

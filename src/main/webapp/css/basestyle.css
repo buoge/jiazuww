@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+/* Name:JiaZuWW Base Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a base style file of all files */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+*{margin:0px; padding: 0px;}
+*html body{ height:100%;}/*For IE*/
+html {overflow-y:scroll;}
+body {width:100%; font-family:微软雅黑,黑体,宋体,Tahoma,verdana,Arial, Helvetica, sans-serif; text-align:center; margin:0; padding:auto;}
+a{text-decoration:none;}
+a:link {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none}
+a:visited {text-decoration:none;}
+img{border:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,article,aside,summary,details,figcaption,figure,footer,header,hgroup,menu,nav,section{padding:0; margin:0; line-height: 1.6em;}
+ol,ul {list-style:none;}
+table {margin:auto;border-collapse:collapse;border-spacing:0;}
+table,caption,tbody,tfoot,thead,tr,th,td{border:10;outline:0;font-size:100%;}
+div { margin:auto; width:auto; height:auto; text-align:left; text-indent:0;}
+div,span { background-color:Transparent;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+textarea {border: 1px solid #ccc; padding: 3px;color:black;}

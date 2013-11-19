@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+#bodyarea .banner {position:relative; width: 960px; height: 310px; margin:6px auto 5px auto; border: 1px solid #cccccc;}
+#bodyarea .banner .sliderbox { width: 950px; height: 300px; margin-top: 5px; overflow: hidden;}
+#bodyarea .banner .sliderbox table {display: table;}
+#bodyarea .banner .sliderbox td.box {width: 100%; height: 100%; overflow: hidden;}
+
+#bodyarea .banner .loginpanel { position:absolute; right:60px; top:-2px; width: 280px;; height: 315px; overflow: hidden; background: transparent url(../../imgs/default/loginbg.png) 0 0 no-repeat;}
+#bodyarea .banner .loginform { width: 100%; height: 80%; margin-top: 60px;}
+#bodyarea .banner .loginform div {height: 45px; line-height: 30px; }
+#bodyarea .banner .loginform label { margin-left: 30px; line-height: 30px;color:white;}
+#bodyarea .banner .loginform input.txt {width: 150px; font-size:1.1em; padding:0 3px 0 3px; height: 31px; line-height:25px; border: 1px solid #ccc; outline: 0; overflow: hidden; background: white;}
+#bodyarea .banner .loginform input.txt:focus { font-size:1.1em; padding:0 3px 0 3px; width: 150px; height: 31px; line-height:25px; border: 1px solid #69c; outline: 0; overflow: hidden; background: white;}
+#bodyarea .banner .loginform input.btn {width: 102px; height: 35px;color:white;}
+#bodyarea .banner .loginform .register { margin-left: 20px; background: transparent url(../../imgs/default/formpanel.png) -698px 0 no-repeat;}
+#bodyarea .banner .loginform .login { margin-left: 10px; background: transparent url(../../imgs/default/formpanel.png) -698px -37px no-repeat;}
+#bodyarea .banner .goleft { position: absolute; width: 25px; height: 42px; left:0; top:40%; cursor:pointer; background: transparent url(../../imgs/default/verticalicons.png) 5px -300px no-repeat;}
+#bodyarea .banner .goright { position: absolute; width: 25px; height: 42px; right:0; top:40%; cursor:pointer; background: transparent url(../../imgs/default/verticalicons.png) -75px -300px no-repeat;}
+
+#bodyarea .widebox .block {border-top: 1px solid #999; padding: 3px; width: 930px; min-height: 100px; height: 280px !important; display:block; overflow: hidden;}
+#bodyarea .widebox .block .content { width:924px; height:320px; margin-top:6px; float: left; background: #ccc url(../../imgs/default/jiapubg.png) 0 0 no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .sliderbar {height: 100%; width: 39px; float: left; background: transparent url(../../imgs/default/formpanel.png) -760px -222px no-repeat;}
+#bodyarea .widebox .block .sliderbar p { display:block; width:20px; margin:10px auto auto auto; font-size:1.2em; font-weight:bolder; color:white; line-height: 18px;}
+#bodyarea .widebox .block .article {float: left; width: 390px; height: 100%;}
+#bodyarea .widebox .block .article h3 { margin-bottom:15px; width: 382px; height: 25px; line-height:25px; text-indent:1em; color: white; font-size: 1.15em; background: transparent url(../../imgs/default/formpanel.png) -360px -220px no-repeat;}
+#bodyarea .widebox .block .article img { border:3px solid white; float: left; margin: 0px 10px 10px 15px; }
+#bodyarea .widebox .block .article .summary { text-indent: 2em;}
+#bodyarea .widebox .block .tree {width: 490px; height: 280px; float: left;}
+#bodyarea .widebox .block .tree ul { width: 100%;}
+#bodyarea .widebox .block .tree ul li { width: 100%; height: 70px; display: table;}
+#bodyarea .widebox .block .tree .half {float: left; width: 50%; height:100%; display: table; overflow: hidden;}
+#bodyarea .widebox .block .tree .leaf { width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .top {background: none;}
+#bodyarea .widebox .block .tree .leftbranch { border-top: 1px solid #666; height:69px; float: right; position: relative;}
+#bodyarea .widebox .block .tree .leftbranch .leaf { float: right; margin: 0 10px 0 0px;}
+#bodyarea .widebox .block .tree .leftbranch .leftleaf {position: absolute; left: -50px; top: 0px; width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .rightbranch { border-top: 1px solid #666; height:69px; float: left; position: relative; }
+#bodyarea .widebox .block .tree .rightbranch .leaf { float: left; margin: 0 0 0 10px; width: 100px; display: table;}
+#bodyarea .widebox .block .tree .rightbranch .rightleaf {position: absolute; right: -50px; top: 0px;width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .head1 { width: 50px; height:50px; margin-top:12px; float: left; position: relative; overflow: hidden;}
+#bodyarea .widebox .block .tree .head2 { width: 50px; height:50px; margin-top:12px; float: right; position: relative;overflow: hidden;}
+#bodyarea .widebox .block .tree .tagbg { position:absolute; width:100%;  height: 15px; left: 0; bottom: 0; background: #000; opacity: .5;filter: alpha(opacity=50);}
+#bodyarea .widebox .block .tree .tag {font-size: 1em; position: absolute; left: 0; bottom: 0; white-space: pre; height: 15px; line-height: 15px;color: white;}
+#bodyarea .widebox .block .tree .vline { width: 49px; height:9px; border-right: 2px solid #666; float: left;}
+#bodyarea .widebox .block .tree .bottom .vline {display: none;}
+#bodyarea .block .btncreate {  float: left; margin-top:3px; margin-left: 360px; }
+#bodyarea .widebox .block ul.prodlist { width: 100%; height: 100%;}
+#bodyarea .widebox .block ul.prodlist li { width: 170px; height: 280px; float: left; overflow: hidden; margin: 6px;}
+#bodyarea .widebox .block ul.prodlist li a {color: #36c;}
+#bodyarea .widebox .block ul.prodlist li img { border: 1px solid #ccc; padding: 1px; margin: 3px;}
+#bodyarea .widebox .block ul.prodlist li label {cursor: pointer; margin: 3px;}
+#bodyarea .widebox .block ul.prodlist li p { line-height: 30px; }
+#bodyarea .widebox .block ul.prodlist li p span { color: red; font-size: 1.1em; font-weight: bolder;}
+#bodyarea .leftbox { width: 640px; float: left;}
+#bodyarea .leftbox .block {border-top: 1px solid #999; padding: 3px; width: 100%; height: 330px; margin:auto 0 30px 0; overflow: hidden;}
+#bodyarea .blockbody { width: 630px; height:97%; margin-top: 9px; display: table; overflow: hidden;}
+#bodyarea .event { width:100%; height:70px; float: right; text-align: left; border-bottom: 1px dashed #ccc;}
+#bodyarea .headimg { border: 1px solid #ccc; padding: 2px; float: left; margin: 6px;}
+#bodyarea .word {height: 50px; clear: right;}
+#bodyarea .word .name {color: #060 !important;}
+#bodyarea .word .news { margin-left: 12px;}
+#bodyarea .leftbox .block .date {float: right; width: 560px; text-align: left;}
+#bodyarea .leftbox .block .menu { width: 180px; height: 100%; float: left; background: #699;}
+#bodyarea .leftbox .block .menu a {color: #eee; font-weight: bold; display: block;float: left; margin:6px; line-height: 18px; white-space: pre; }
+#bodyarea .leftbox .block .menu a:HOVER {color: #fff; font-size: 1.1em;}
+#bodyarea .leftbox .block .prods { width: 450px; height: 100%; float: left; overflow: hidden;}
+#bodyarea .leftbox .block .prods a { float: left; position: relative;}
+#bodyarea .leftbox .block .prods a h4 {position: absolute; left:0; top:0; width: 100%; height: 100%; text-indent: -9999px; }
+#bodyarea .leftbox .block .prods:HOVER a h4 {background: #000;opacity: .3;filter: alpha(opacity=30);}
+#bodyarea .leftbox .block .prods a:hover h4 {background: none;}
+.edulist {}
+.edulist li {line-height: 30px;}
+#bodyarea .rightbox {width: 300px; height:100%; position:absolute; right:5px; top:30px; border-left: 1px solid #999; border-right: 1px solid #999; background: white; overflow: hidden;}
+#bodyarea .rightbox h3 { font-size: 1.2em; font-weight: bolder; line-height: 30px; text-indent: 6px;}
+#bodyarea .rightbox h3 span { margin-left: 3px;}
+#bodyarea .rightbox .listblock,.imgsblock,.listblock { margin:auto; width: 95%; clear: both; display: table; }
+#bodyarea .rightbox .listblock .imgsblock ul { margin:auto; width: 100%; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll -80px -357px;}
+#bodyarea .rightbox .listblock .imgsblock li { line-height: 24px; height: 24px; border-bottom: 1px dashed #999; overflow: hidden;}
+#bodyarea .rightbox .listblock .imgsblock a { margin-left: 25px; color: #060; *float: left; *margin-top: 3px;}
+#bodyarea .rightbox .listblock span {color: #ccc; text-align: right; margin-right: 3px;}
+#bodyarea .rightbox .imgsblock a {float: left; position: relative;} 
+#bodyarea .rightbox .imgsblock a label { position: absolute; cursor:pointer; left: 0; right: 0; top:0; width: 100%; height: 100%; text-indent: -999px;} 
+#bodyarea .rightbox .imgsblock:HOVER a label {background: #000;opacity: .3;filter: alpha(opacity=30);}
+#bodyarea .rightbox .imgsblock a:HOVER label {background: none;}
+.ul3 {color: #000; width: 300px; height:100px; margin: 3px; float: left;}
+.ul3 img {border: 1px solid #ccc; padding: 1px; width: 110px; height: 80px;}
+.ul3 .right {width: 180px;}
+.ul3 a {margin: 0;}
+#bodyarea .rightbox .more {width:90%; text-align: right; clear: both;}
+#bodyarea .rightbox .more a {float: none !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

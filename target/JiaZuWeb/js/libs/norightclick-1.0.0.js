@@ -1,0 +1,1 @@
+document.oncontextmenu=function(e){return false}//IE and Firefox but opera?

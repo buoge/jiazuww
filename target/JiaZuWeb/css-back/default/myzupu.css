@@ -1,0 +1,55 @@
+.editblock { width: 100%;}
+.treebox {margin: 3px;}
+.treebox span {cursor: pointer;}
+.treebox span.here { color: red; border: 1px solid red;}
+.editblock div.left { width: 300px; height: 100%; overflow: auto;}
+.editblock div.right {width: 500px; height: 100%;}
+.editblock table { width: 49%;color: white;}
+.editblock table.left { background: #6699cc;}
+.editblock table.right { background: #FF6666;}
+table thead {font-weight: bold;}
+.editblock table tr { height: 36px;;}
+.editblock table thead tr td {width:100%; line-height: 30px; height:30px; text-align: center;}
+.file {width: 150px; background: none; outline: none; border: 0;}
+.container {width: 100%; display: table;}
+.container div,span {margin: auto; padding: auto;}
+
+
+#bodyarea .widebox .container { width: 750px; min-height: 100px;}
+#bodyarea .widebox .container .content { width:750px; margin-top:6px; float: left; display:table; background: #c7d7b0 url(../../imgs/default/zupubg.png) bottom left no-repeat;}
+#bodyarea .widebox .container .sliderbar {height: 300px; width: 39px; display:block; float: left;}/* background: transparent url(../../imgs/default/formpanel.png) -760px -222px no-repeat;*/
+#bodyarea .widebox .container .sliderbar p { display:block; width:20px; margin:10px auto auto auto; font-size:1.2em; font-weight:bolder; color:white; line-height: 18px;}
+#bodyarea .widebox .container .article {float: left; width: 650px;}
+#bodyarea .widebox .container .article h3 { margin-bottom:15px; width: 382px; height: 25px; line-height:25px; text-indent:1em; color: white; font-size: 1.15em; overflow: hidden;}/* background: transparent url(../../imgs/default/formpanel.png) -360px -220px no-repeat;*/
+#bodyarea .widebox .container .article img { border:3px solid white; float: left; margin: 0px 10px 10px 15px; }
+#bodyarea .widebox .container .article .summary { text-indent: 2em;}
+#bodyarea .widebox .container .tree {width: 490px; height: 280px; clear: right; display: table; position: relative;}
+#bodyarea .widebox .container .tree ul { width: 100%; list-style-type: none; }
+#bodyarea .widebox .container .tree ul li { width: 100%; height: 160px; display: table; text-align: center;}
+#bodyarea .widebox .container .tree .half {float: left; width: 50%; height:100%; display: table; overflow: hidden;}
+#bodyarea .widebox .container .tree .leaf { display:inline-block; margin-left:100px; width: 100px; height: 69px; overflow: hidden;}/* background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat;*/
+#bodyarea .widebox .container .tree .top {background: none;}
+#bodyarea .widebox .container .tree .leftbranch { height:69px; float: right; position: relative;}/* border-top: 1px solid #666;*/
+#bodyarea .widebox .container .tree .leftbranch .leaf { float: right; margin: 0 10px 0 0px;}
+#bodyarea .widebox .container .tree .leftleaf { display:inline-block; margin-left:100px; width: 100px; height: 69px; overflow: hidden;}/* background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat;*/
+#bodyarea .widebox .container .tree .rightbranch { height:69px; float: left; position: relative; }/*border-top: 1px solid #666; */
+#bodyarea .widebox .container .tree .rightbranch .leaf { float: left; margin: 0 0 0 10px; width: 100px; display: table;}
+#bodyarea .widebox .container .tree .rightleaf { display:inline-block; margin-left:100px; width: 100px; height: 69px; overflow: hidden;}/* background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat;*/
+#bodyarea .widebox .container .tree .head1 { width: 50px; height:50px; margin-top:12px; float: left; position: relative; overflow: hidden;}
+#bodyarea .widebox .container .tree .head2 { width: 50px; height:50px; margin-top:12px; float: right; position: relative;overflow: hidden;}
+#bodyarea .widebox .container .tree .tagbg { position:absolute; width:100%;  height: 15px; left: 0; bottom: 0; background: green; opacity: .5;filter: alpha(opacity=50);}
+#bodyarea .widebox .container .tree .tag {font-size: 1em; position: absolute; left: 0; bottom: 0; white-space: pre; height: 15px; line-height: 15px;color: white;}
+#bodyarea .widebox .container .tree .vline { width: 49px; height:9px; border-right: 2px solid #666; float: left; display: none;}
+#bodyarea .widebox .container .tree .bottom .vline {display: none;}
+#bodyarea .widebox .container .btncreate {  float: left; margin-top:3px; margin-left: 360px;}
+.firstli {height: 60px !important; display: block !important; margin-top: 10px;}
+.leftleaf {width: 180px !important;}
+.head1, .head2 {width: 80px !important; height:80px !important; margin-top: 0 !important; float: left !important;}
+.disable .tagbg {background: #000 !important;}
+.leaf,.leftleaf,.rightleaf { height: 80px!important; *float: left; width: auto !important;}
+.head1 img, .head2 img {width: 100% !important; height: 100% !important;}
+#cv {position: absolute;}
+#ancestor { overflow: hidden; visibility: hidden;}
+#ancestor .head1 {overflow: visible !important; *margin-top: 30px;}
+#ancestor .tag {color: #000 !important; font-weight: bold; position: relative !important; left: 30px !important; bottom:0 !important; text-decoration: underline; height: 20px !important;}
+#ancestor .tagbg {display: none;}

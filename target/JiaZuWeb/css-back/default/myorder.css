@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.boxs { margin: 8px; height: 100%; color: #000;}
+.widebox { width: 99% !important; overflow: hidden; margin-bottom: 60px;}
+.widebox h2 { width:90%; height:36px; font-size: 1.5em; line-height: 36px; margin-left: 360px; position: relative;margin-top: 9px;}
+.widebox h2 span {position: absolute; text-indent:1.5em; height: 100%; width: 200px; background: transparent url(../../imgs/default/formpanel.png) -554px -270px no-repeat; float: left;}
+.widebox h2 span.first { left: 0;}
+.widebox h2 span.first .bg { position: absolute; left:0;top:0; width: 30px; height:100%; background-color: #e9e9e9;}
+.widebox h2 span.here .bg { position: absolute; width: 30px; height:100%; background-color: #d52d2d;}
+.widebox h2 span.second { left: 190px;}
+.widebox h2 span.third { left: 380px;}
+.widebox h2 span.fourth { left: 570px;}
+.widebox h2 span.here {color:white; background: transparent url(../../imgs/default/formpanel.png) -344px -271px no-repeat; float: left;}
+.widebox h1 {border-top: 1px solid #ccc; width:95%; display:block; margin:auto; font-size: 2em; line-height: 2em; margin-top: 6px; }
+.box {width: 90%; border-bottom: 1px dashed #ccc; margin: 6px auto 6px auto; padding-bottom: 30px;}
+.box h3 {font-size: 1.4em; line-height: 30px; font-weight: bold;}
+.dlbox { width: 800px; border: 1px solid #ddd;}
+.dlbox dt {width: 100%; line-height:30px; text-indent:1em; font-size:1.1em; font-weight:bold; border-bottom: 1px dashed #ddd;}
+.dlbox dd { margin:6px; margin-left: 20px;}
+.dlbox dd a {}
+.dlform {width: 100%; display: table;}
+.dlform dt {width: 100px; height: 30px; margin-top:5px; line-height: 30px; text-align: right; float: left; clear: left;}
+.dlform dd {float: left; width: 700px; margin-top:5px; line-height: 30px;}
+.dlform dd .btnsave {width: 75px; height: 30px; color: white; font-weight:bold; font-size:1.1em; line-height: 30px; background: transparent url(../../imgs/default/formpanel.png) -260px -140px no-repeat;}
+
+.widebox table { margin-top: 6px; border: 1px solid #ddd; width: 95%;}
+.widebox table thead {background-color: #f3f3f3; border-bottom: 1px solid #ddd;}
+.widebox table thead tr { height: 40px; color: #666;}
+.widebox table tbody tr { height: 60px; background-color: #fffdee;}
+.widebox table tbody a {color: #36c;}
+.widebox table tr th,td { text-align: center; padding:1px; vertical-align:middle; height:40px;}
+.widebox table tbody .goleft {display:inline-block; margin-left:20px; width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -360px no-repeat; float: left;_margin-top:-9px;}
+.widebox table tbody .goright {display:inline-block;width: 23px; height: 23px; background: white url(../../imgs/default/verticalicons.png) -50px -384px no-repeat; float: left;  _margin-top:-9px;}
+.widebox table tbody .txtnum { height: 25px; line-height:15px; _padding-top: 6px;}
+
+.widebox .infor {float: right; margin-right: 60px; text-align: right;}
+.widebox .infor p {line-height: 30px;}
+.widebox .infor p .red {font-size: 1.5em;}
+
+.dlcharge { width: 70%; margin: auto; border: 1px solid #ccc; margin-top: 30px; *margin-top: 0px; background: #ebf4fb;}
+.dlcharge dt {font-size: 1.3em; font-weight: bold; line-height: 30px; border-bottom: 1px dashed #ccc; text-indent: 1em;}
+.dlcharge dd { padding: 6px; margin-bottom: 15px; margin-top: 6px;}
+.dlcharge dd a {}
+.dlcharge dd a img {border: 1px solid #ccc; padding: 1px;}

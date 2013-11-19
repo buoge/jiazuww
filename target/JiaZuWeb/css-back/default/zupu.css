@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+#bodyarea .leftbox { width: 300px; float: left;}
+#bodyarea .leftbox h2 { color:#333; text-indent: 2em; line-height: 39px; font-size: 1.2em; font-weight: bolder; background: transparent  url(../../imgs/default/formpanel.png) -380px -80px no-repeat; overflow: hidden;}
+#bodyarea .leftbox h3 { color:white; width:100px; height:36px; text-indent: 1em; line-height: 30px; background: transparent  url(../../imgs/default/formpanel.png) -380px -130px no-repeat; overflow: hidden;}
+
+#bodyarea .leftbox .block {border: 1px solid #ccc; width: 100%; height: 350px; margin-bottom: 10px; }
+#bodyarea .leftbox .block .content {width: 98%; height: 100%;}
+#bodyarea .leftbox .block .event { width: 100%; clear: both; display: table;}
+#bodyarea .leftbox .block .event ul { float: left; width: 230px;}
+#bodyarea .leftbox .block .event li { line-height: 25px; color: #ccc;}
+#bodyarea .leftbox .block .event li .title {color: #333; font-size: 1.1em;}
+#bodyarea .leftbox .block li .date { float: right;}
+#bodyarea .leftbox .block .event .groupimg {margin:3px; float: left;}
+#bodyarea .leftbox .block .list {width: 95%;}
+#bodyarea .leftbox .block .list ul {color: #ccc; }
+#bodyarea .leftbox .block .list li {line-height: 30px; text-indent:2em; background: transparent url(../../imgs/default/verticalicons.png) -85px -625px no-repeat; overflow: hidden;}
+#bodyarea .leftbox .block .list li .name {font-size: 1.1em; color: #0082AD;}
+#bodyarea .rightbox { float: right; width: 640px; margin-top: 9px;}
+#bodyarea .rightbox .block {border-top: 1px solid #ccc; width: 100%; height: 300px; margin-bottom: 10px; }
+#bodyarea .rightbox .login { width: 555px; height: 320px; background:  transparent url(../../imgs/default/grouploginbg.gif) 10px 10px no-repeat; overflow: hidden;}
+#bodyarea .rightbox .login .form { height: 65px; width: 550px; margin-top:150px; background:  transparent url(../../imgs/default/horizontalline.png) 0px -6px no-repeat; overflow: hidden;}
+#bodyarea .rightbox .login .form .txt { width: 200px; color: #666; font-size: 1.2em; margin: 6px 0 0 6px;}
+#bodyarea .rightbox .login .form .btn { float:right; margin:9px 12px 0 0;  height: 31px; width: 100px; background: #69c  url(../../imgs/default/formpanel.png) -250px -100px no-repeat; overflow: hidden;}
+#bodyarea .rightbox .login .form .btn { *float:none;  *margin-left: 3px; *position: relative; *top: 2px;  *background-position: -249px -98px;}
+#bodyarea .rightbox .register {font-size:2em; font-weight:bolder; color:white; width: 222px; height: 52px; margin:10px 0 0 320px; background: #9c3  url(../../imgs/default/formpanel.png) 0px -200px no-repeat; overflow: hidden;}
+#bodyarea .rightbox .article { width: 97%; margin-top: 9px; position: relative;}
+#bodyarea .rightbox .article img {margin: 6px; float: left;}
+#bodyarea .rightbox .article .btncreate { position: absolute; right: 20px; bottom: 20px;}
+#bodyarea .rightbox .article .content { text-indent: 2em;}
+
+
+#bodyarea .widebox .block {border-top: 1px solid #ccc; padding: 3px; width: 930px; min-height: 100px;}
+#bodyarea .widebox .block .content { width:924px; height:320px; margin-top:6px; float: left; background: #ccc url(../../imgs/default/jiapubg.png) 0 0 no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .sliderbar {height: 100%; width: 39px; float: left; background: transparent url(../../imgs/default/formpanel.png) -760px -222px no-repeat;}
+#bodyarea .widebox .block .sliderbar p { display:block; width:20px; margin:10px auto auto auto; font-size:1.2em; font-weight:bolder; color:white; line-height: 18px;}
+#bodyarea .widebox .block .article {float: left; width: 390px; height: 100%;}
+#bodyarea .widebox .block .article h3 { margin-bottom:15px; width: 382px; height: 25px; line-height:25px; text-indent:1em; color: white; font-size: 1.15em; background: transparent url(../../imgs/default/formpanel.png) -360px -220px no-repeat;}
+#bodyarea .widebox .block .article img { border:3px solid white; float: left; margin: 0px 10px 10px 15px; }
+#bodyarea .widebox .block .article .summary { text-indent: 2em;}
+#bodyarea .widebox .block .tree {width: 490px; height: 280px; float: left;}
+#bodyarea .widebox .block .tree ul { width: 100%;}
+#bodyarea .widebox .block .tree ul li { width: 100%; height: 70px; display: table;}
+#bodyarea .widebox .block .tree .half {float: left; width: 50%; height:100%; display: table; overflow: hidden;}
+#bodyarea .widebox .block .tree .leaf { width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .top {background: none;}
+#bodyarea .widebox .block .tree .leftbranch { border-top: 1px solid #666; height:69px; float: right; position: relative;}
+#bodyarea .widebox .block .tree .leftbranch .leaf { float: right; margin: 0 10px 0 0px;}
+#bodyarea .widebox .block .tree .leftbranch .leftleaf {position: absolute; left: -50px; top: 0px; width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .rightbranch { border-top: 1px solid #666; height:69px; float: left; position: relative; }
+#bodyarea .widebox .block .tree .rightbranch .leaf { float: left; margin: 0 0 0 10px; width: 100px; display: table;}
+#bodyarea .widebox .block .tree .rightbranch .rightleaf {position: absolute; right: -50px; top: 0px;width: 100px; height: 69px; background: transparent url(../../imgs/default/verticalicons.png) 5px -230px no-repeat; overflow: hidden;}
+#bodyarea .widebox .block .tree .head1 { width: 50px; height:50px; margin-top:12px; float: left; position: relative; overflow: hidden;}
+#bodyarea .widebox .block .tree .head2 { width: 50px; height:50px; margin-top:12px; float: right; position: relative;overflow: hidden;}
+#bodyarea .widebox .block .tree .tagbg { position:absolute; width:100%;  height: 15px; left: 0; bottom: 0; background: #000; opacity: .5;filter: alpha(opacity=50);}
+#bodyarea .widebox .block .tree .tag {font-size: 1em; position: absolute; left: 0; bottom: 0; white-space: pre; height: 15px; line-height: 15px;color: white;}
+#bodyarea .widebox .block .tree .vline { width: 49px; height:9px; border-right: 2px solid #666; float: left;}
+#bodyarea .widebox .block .tree .bottom .vline {display: none;}
+#bodyarea .widebox .block .btncreate {  float: left; margin-top:3px; margin-left: 360px;}

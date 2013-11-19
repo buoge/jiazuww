@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Main Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a main style file of all class in pages */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+@import url("basestyle.css");
+* html .iehd { display:none;}/*只对IE使用*/
+/*表单*/
+input.txt { font-size:1.1em; padding:0 3px 0 3px; width: 235px; height: 31px; line-height:25px; background: transparent url(../../imgs/default/formpanel.png) no-repeat scroll 0 -100px; border: 0; outline: 0; overflow: hidden;}
+input.txt:focus { font-size:1.1em; padding:0 3px 0 3px; width: 235px; height: 31px; line-height:25px; background: transparent url(../../imgs/default/formpanel.png) no-repeat scroll 0 -139px; border: 0; outline: 0; overflow: hidden;}
+input.txtwidth60 {border: 1px solid #cccccc; width: 60px; height: 28px; line-height: 25px; background: none;}
+input.txtwidth60:FOCUS {border: 1px solid #71a0df; width: 60px; height: 28px; line-height: 25px; background: none;}
+input.short {border: 1px solid #cccccc; width: 60px; height: 28px; line-height: 25px; background: none;}
+input.short:FOCUS {border: 1px solid #71a0df; width: 60px; height: 28px; line-height: 25px; background: none;}
+input.txtwidth150 {border: 1px solid #cccccc; width: 150px; height: 28px; line-height: 25px; background: white;}
+input.txtwidth150:FOCUS {border: 1px solid #71a0df; width: 150px; height: 28px; line-height: 25px; background: white;}
+input.long {border: 1px solid #cccccc; width: 300px; height: 28px; line-height: 25px; background: none;}
+input.long:FOCUS {border: 1px solid #71a0df; width: 300px; height: 28px; line-height: 25px; background: none;}
+
+input.txtnum {text-align:center; border: 1px solid #cccccc; width: 20px; height: 28px; line-height: 25px; background: none;}
+input.txtnum:FOCUS {text-align:center; border: 1px solid #cccccc; width: 20px; height: 28px; line-height: 25px; background: none;}
+input.btn { border: 0; cursor: pointer;}
+input.chk {*background: transparent;}
+.btn1 {background:#FFFFFF url(../../imgs/default/btnbg.gif) top left; border-width:0; height:22px; width:72px; cursor:hand;}
+.btn2 {background:#FFFFFF url(../../imgs/default/btnbg.gif) center left;border-width:0; height:22px; width:72px; cursor:hand;}
+.btn3 {background:#FFFFFF url(../../imgs/default/btnbg.gif) bottom left;border-width:0; height:22px; width:72px; cursor:hand;}
+.btnorange { width: 126px; height: 36px; background: #f90 url(../../imgs/default/formpanel.png) -486px -128px no-repeat; font-size: 1.2em; color: white; font-weight: bold;}
+.err { color: #cc0033; line-height:25px; text-indent: 2em; background: transparent url(../../imgs/default/verticalicons.png) no-repeat scroll -0 -177px;}}
+/*设定边框*/
+.bd0 {border:0 !important;}/*消除border，有!important加权。*/
+.bdc {border:#CCC 1px solid;}
+.bdcp2 {border:1px #CCC solid; padding:2px;}/* for img bg*/
+.bdbtmdashed { border-bottom:dashed 1px #CCC;}
+/*清除浮动*/
+.clear {clear:both;font-size:0;}
+.scroll { overflow:auto;}
+/*作为调试*/
+.bug { border:dashed 1px red !important;}
+.bug0 { border:dashed 1px #b08900 !important;}
+.bug1 { border:dashed 1px #f07a23 !important;}
+.bug2 { border:dashed 1px #77b001 !important;}
+.bug3 { border:dashed 1px #ffff00 !important;}
+.bug4 { border:dashed 1px #66cccc !important;}
+.bug5 { border:dashed 1px #3300cc !important;}
+/*设置display*/
+.di {display:inline;}
+.db {display:block;}
+.hd {display:none !important;}
+.dt {display:table;}
+.table {display:table;}
+/*block对齐*/
+.flow {display:inline-block; word-spacing:0; *display:inline; *zoom:1; }
+.right {float:right;}
+.left { float:left;}
+.rltv { position:relative;}
+.abs { position:absolute;}
+.abslft { position:absolute; left:0;}
+.absrgt { position:absolute; right:0;}
+.abstop { position:absolute; top:0;}
+.absbtm { position:absolute; bottom:0;}
+.abslftbtm { position:absolute; left:0; bottom:0;}
+.absrgtbtm { position:absolute; right:0; bottom:0;}
+.abslfttop { position:absolute; left:0; top:0;}
+.absrgttop { position:absolute; right:0; top:0;}
+/*内容控制*/
+.oh {overflow:hidden;}
+/*文本字体*/
+.em2 { font-size: 2em;}
+.txtin2 { text-indent:2em;display:block;}
+.ltfnt { font-size:0.9em;}
+.txtcen {text-align:center !important;color:white;}
+.txtlft {text-align:left;}
+.txtrgt {text-align:right !important;}
+.txttop {vertical-align:top;}
+.txtbtm {vertical-align:bottom;}
+.size12 {font-size: 12px !important;}
+.bold { font-weight:bold;}
+.noline {text-decoration: none !important;}
+/*文本框及按钮.....*/
+.txtarea { background:White url(textareabg.jpg) no-repeat fixed bottom right; border:solid 1px #cccccc;}
+.btngray { border:solid 1px #D9E0E8; background-color:#F4F5EF; line-height:18px;}/*这里设置line-height为18px可以将按钮的高度设为与textbox高度height:18相同高度；*/
+/*设置边距*/
+.mauto { margin:auto; padding:auto;}
+.mlrauto {margin-left:auto;margin-right:auto}/*Div居中样式，这个属性可以让block块级元素自身居中，而不是里面的内容居中*/
+.mlft3 { margin-left:3px !important;}
+.mlft5 { margin-left:5px !important;}
+.mlft10 { margin-left:10px !important;}
+.mlft20 { margin-left:20px !important;}
+.mlft30 { margin-left:30px !important;}
+.mlft45 { margin-left:45px !important;}
+.mlft60 { margin-left:60px !important;}
+.mlft90 { margin-left:90px !important;}
+.mlft150 { margin-left:150px !important;}
+.mrgt3 { margin-right:3px !important;}
+.mrgt5 { margin-right:5px !important;}
+.mrgt10 { margin-right:10px !important;}
+.mrgt20 { margin-right:20px !important;}
+.mrgt30 { margin-right:30px !important;}
+.mrgt50 { margin-right:50px !important;}
+.mrgt60 { margin-right:60px !important;}
+.mrgt100 { margin-right:100px !important;}
+.mrgt150 { margin-right:150px !important;}
+.mtop3 { margin-top:3px !important;}
+.mtop5 { margin-top:5px !important;}
+.mtop8 { margin-top:8px !important;}
+.mtop10 { margin-top:10px !important;}
+.mtop20 { margin-top:20px !important;}
+.mtop30 { margin-top:30px !important;}
+.p3 { padding:3px !important;}
+.ptop5 { padding-top:5px !important;}
+.ptop8 { padding-top:8px !important;}
+.plft5 { padding-left:6px !important;}
+.plft10 { padding-left:10px !important;}
+.plft60 { padding-left:60px !important;}
+.plft100 { padding-left:100px !important;}
+.prgt6 { padding-right:6px !important;}
+.prgt10 { padding-right:10px !important;}
+.prgt60 { padding-right:60px !important;}
+/*设置宽度*/
+.w60 {width: 60px; display: table; height: 1px;}
+/*设置对象滚动条*/
+.scrorg { SCROLLBAR-FACE-COLOR: #ff9800; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff;}
+.scrtxt { SCROLLBAR-FACE-COLOR: #F5F5F5; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff;}
+/*规定文本颜色*/
+.red {color:red !important;}
+.yellow {color:#FF9900;}
+.green {color:#70B9D0;}
+.brown {color:#0082AD;}
+.white {color:#FFFFFF;}
+.ff9800 {color:#FF9800;}/*橘红色*/
+.c900 {color: #900;}
+.gray {color: #999;}
+.pink {color: #f36;}
+/*设置文本水平垂直居中的样式*/
+.fftable {display:table !important; display:block; position: relative;}/*对于IE来说div设为table无所谓，对于ff opera就不可同了*/
+.cenmid { position:absolute; left:0; top:50%; width:100%;}/*IE居中显示，需要在class="cenmid"的层里套一个<p>，同时设置层外的层的position:relative*/
+.cenmid p { position:relative; top:-50%;}/*需要在class="cenmid"的层里套一个<p>*/
+html>body .cenmid { display:table-cell; vertical-align:middle; position:static;}/*设置ff opera居中*/
+/*使用div模拟水品线效果*/
+.hr96 { width:96%; height:1px; clear:both; border-bottom:solid 1px #CCCCCC;}
+.hr90 { width:90%; clear:both; border-bottom:solid 1px #CCCCCC;}

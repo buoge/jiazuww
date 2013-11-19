@@ -1,0 +1,10 @@
+﻿ul.imgsblock { clear:both; display: table; text-indent: 0;}
+ul.imgsblock li {float: left; position: relative;}
+ul.imgsblock li span {display: none;}
+ul.imgsblock li:HOVER span { display: block; text-align:right; position: absolute; left: 3px; bottom:0; background-color: #CCC; width: 97%; height: 25px;opacity: .7;filter: alpha(opacity=70);}
+ul.imgsblock li:HOVER span a {color: red !important; font-weight:bold; float: right;}
+ul.imgsblock a {float: left; position: relative; border: 1px solid #ccc; padding: 1px; margin: 3px;}
+ul.imgsblock img { }
+ul.imgsblock a label { position: absolute; left: 0; right: 0; width: 100% !important; height: 100%;  display:block; text-indent: -999px;} 
+ul.imgsblock:HOVER a label {background: #000;opacity: .3;filter: alpha(opacity=30);}
+ul.imgsblock a:HOVER label {background: none; cursor: pointer;}

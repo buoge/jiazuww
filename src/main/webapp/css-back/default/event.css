@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+/* Name:JiaZuWW Common Style */
+/* location:http://www.jiazuww.com */
+/* Description:This is a style file for one page */
+/* Author:www.wbcom.cn QQ:993017535 TEL：15300128809 */
+/* Copyright © 2012 JiaZuWW All Rights Reserved. */
+
+.box { margin-top: 10px; display: table; float:left; border-bottom: 1px solid #ccc;}
+.top { border: 1px solid #f90;}
+.author {width: 50px; height: 100%; float: left; display: table;}
+.block {width: 890px; float: right; height: 100%; margin-left: 5px; display: table;}
+.block .content { width: 100%;}
+.block .content .authorname { color: #069; font-weight: bolder; font-size: 1.1em;}
+.block .content .event { line-height: 20px;}
+.block .content .imgbox {border: 1px solid #ccc; padding: 2px; display: table; margin-left: 0; *float: left;}
+.block .content .imgbox img {cursor: url("../../imgs/default/cursor_zoom.cur"),pointer;}
+.block .content .big img {cursor: url("../../imgs/default/cursor_minify.cur"),pointer;}
+.block .info {color: #069; text-align: right; margin: 6px 3px 3px 0;}
+.block .info a {color: #069;}
+.block .comments {width: 90%; margin-left: 0; background-color: #efefef; border: 1px solid #ccc; margin: 10px 0 10px 0; padding: 9px;}
+.block .comments textarea { width: 95%; height: 30px;}
+.block .comments .leftmsg { color: red; line-height: 30px; float: left;}
+.block .comments .btmbar { margin-right: 20px; height:30px; line-height:30px; overflow: hidden; float: right;}
+.block .comments .btmbar #btncomment {background:transparent url(../../imgs/default/formpanel.png) no-repeat scroll -612px -330px; cursor: pointer; width: 60px; height: 20px;}
+.argue h2 { font-size: 15px; line-height:36px; text-indent: 10px; color: white; font-weight: bold;width: 100%; height: 30px;  background: transparent url(../../imgs/default/formpanel.png) -712px -84px no-repeat; border-bottom: 2px solid #c00;}
+.argument { width:90%; display:table; text-align: left; border-bottom: 1px solid #ccc;}
+.headimg { border: 1px solid #ccc; padding: 2px; float: left; margin: 9px;}
+.word {height: 50px; width:620px; float: left; clear: right; margin-top: 15px;}
+.word .name {color: #060;}
+.word .content { margin-left: 12px;}
+.date {float: left; width: 700px; text-align: right;}
+.argument .delete {text-decoration: none !important; color: red !important;}
+.argument:HOVER .delete {}
+
+

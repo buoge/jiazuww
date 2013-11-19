@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiazu.web.shop.dao.B2CDao">
+	
+	<sql id="basecolumns">`uid`,`createtime`</sql>
+	<sql id="allcolumns"><include refid="basecolumns"/>, `catuid`, `sn`, `name`, `number`, `weight`, `marketprice`, `shopprice`, `shippingfee`, `keywords`, `brief`, `desc`, `thumb`, `littlethumb`, `rate`, `sortorder`, `isonsale`, `isbest`, `isnew`, `istop`, `ishot`, `type`, `showtype`, `sellcount`, `buyercount`, `clickcount`, `updatetime`</sql>
+	<sql id="table">b2c</sql>
+	<sql id="whereid">where uid = #{uid}</sql>
+	<sql id="allfields"><include refid="basecolumns"/>,`catuid`, `sn`, `name`, `number`, `weight`, `marketprice`, `shopprice`, `shippingfee`, `keywords`, `brief`, `desc`, `thumb`, `littlethumb`, `rate`, `sortorder`, `isonsale`, `isbest`, `isnew`, `istop`, `ishot`, `type`, `showtype`, `sellcount`, `buyercount`, `clickcount`</sql>
+	<sql id="allparams">#{uid},#{createTime},#{catuid},#{sn},#{name},#{number},#{weight},#{marketprice},#{shopprice},#{shippingfee},#{keywords},#{brief},#{desc},#{thumb},#{littlethumb},#{rate},#{sortorder},#{isonsale},#{isbest},#{isnew},#{istop},#{ishot},#{type},#{showtype},#{sellcount},#{buyercount},#{clickcount}</sql>
+	<sql id="count">count(uid)</sql>
+	<sql id="setcatuid">catuid = #{catuid}</sql>
+	<sql id="setsn">sn = #{sn}</sql>
+	<sql id="setname">name = #{name}</sql>
+	<sql id="setname_lk">name like CONCAT('%',#{name_lk},'%')</sql>
+	<sql id="setisonsale">isonsale = #{isonsale}</sql>
+	<sql id="setisbest">isbest = #{isbest}</sql>
+	<sql id="setisnew">isnew = #{isnew}</sql>
+	<sql id="setistop">istop = #{istop}</sql>
+	<sql id="setishot">ishot = #{ishot}</sql>
+	<sql id="settype">type = #{type}</sql>
+	<sql id="setshowtype">showtype = #{showtype}</sql>
+	<sql id="setsearch">(name like CONCAT('%',#{search},'%') or keywords like CONCAT('%',#{search},'%') or `desc` like CONCAT('%',#{search},'%') )</sql>
+	<sql id="allsets">set <include refid="setcatuid"/>,<include refid="setsn"/>,<include refid="setname"/>,<include refid="setisonsale"/>,<include refid="setisbest"/>,<include refid="setisnew"/>,<include refid="setistop"/>,<include refid="setishot"/>,number = #{number}, weight = #{weight}, marketprice = #{marketprice}, shopprice = #{shopprice}, shippingfee = #{shippingfee}, keywords = #{keywords}, brief = #{brief}, `desc` = #{desc}, thumb = #{thumb}, littlethumb = #{littlethumb}, rate = #{rate}, sortorder = #{sortorder}, <include refid="settype"/>, <include refid="setshowtype"/>, sellcount = #{sellcount}, buyercount = #{buyercount}, clickcount = #{clickcount} </sql>
+	<sql id="orderby">order by createtime</sql>
+	
+	<select id="get" parameterType="string" resultType="B2C">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</select>
+	
+	<select id="getOne" parameterType="hashMap" resultType="B2C">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="catuid != null">
+				<include refid="setcatuid"/>
+			</if>
+			<if test="sn != null">
+				and <include refid="setsn"/>
+			</if>
+			<if test="name != null">
+				and <include refid="setname"/>
+			</if>
+			<if test="isonsale != null">
+				and <include refid="setisonsale"/>
+			</if>
+			<if test="isbest != null">
+				and <include refid="setisbest"/>
+			</if>
+			<if test="isnew != null">
+				and <include refid="setisnew"/>
+			</if>
+			<if test="istop != null">
+				and <include refid="setistop"/>
+			</if>
+			<if test="ishot != null">
+				and <include refid="setishot"/>
+			</if>
+			<if test="type != null">
+				and <include refid="settype"/>
+			</if>
+			<if test="showtype != null">
+				and <include refid="setshowtype"/>
+			</if>
+		</where>
+		LIMIT 0,1
+	</select>
+	
+	<select id="getCount" parameterType="hashMap" resultType="int">
+		select
+		<include refid="count" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="catuid != null">
+				<include refid="setcatuid"/>
+			</if>
+			<if test="sn != null">
+				and <include refid="setsn"/>
+			</if>
+			<if test="name != null">
+				and <include refid="setname"/>
+			</if>
+			<if test="name_lk != null">
+				and <include refid="setname_lk"/>
+			</if>
+			<if test="isonsale != null">
+				and <include refid="setisonsale"/>
+			</if>
+			<if test="isbest != null">
+				and <include refid="setisbest"/>
+			</if>
+			<if test="isnew != null">
+				and <include refid="setisnew"/>
+			</if>
+			<if test="istop != null">
+				and <include refid="setistop"/>
+			</if>
+			<if test="ishot != null">
+				and <include refid="setishot"/>
+			</if>
+			<if test="type != null">
+				and <include refid="settype"/>
+			</if>
+			<if test="showtype != null">
+				and <include refid="setshowtype"/>
+			</if>
+		</where>
+	</select>
+	
+	<select id="getList" parameterType="hashMap" resultType="B2C">
+		select
+		<include refid="allcolumns" />
+		from
+		<include refid="table"/>
+		<where>
+			<if test="catuid != null">
+				<include refid="setcatuid"/>
+			</if>
+			<if test="sn != null">
+				and <include refid="setsn"/>
+			</if>
+			<if test="name != null">
+				and <include refid="setname"/>
+			</if>
+			<if test="name_lk != null">
+				and <include refid="setname_lk"/>
+			</if>
+			<if test="isonsale != null">
+				and <include refid="setisonsale"/>
+			</if>
+			<if test="isbest != null">
+				and <include refid="setisbest"/>
+			</if>
+			<if test="isnew != null">
+				and <include refid="setisnew"/>
+			</if>
+			<if test="istop != null">
+				and <include refid="setistop"/>
+			</if>
+			<if test="ishot != null">
+				and <include refid="setishot"/>
+			</if>
+			<if test="type != null">
+				and <include refid="settype"/>
+			</if>
+			<if test="showtype != null">
+				and <include refid="setshowtype"/>
+			</if>
+			<if test="search != null">
+				and <include refid="setsearch"/>
+			</if>
+		</where>
+		<!-- 处理orderby语句 -->
+		<choose>
+			<when test="orderBy != null">
+				${orderBy}
+			</when>
+			<otherwise>
+				<include refid="orderby"/>
+				<if test="ascDesc != null">
+					${ascDesc}
+				</if>
+			</otherwise>
+		</choose>
+		<!-- 处理limit语句 -->
+		<trim prefix="LIMIT" prefixOverrides=",">
+			<if test="startIndex != null and pageSize != null">
+				${startIndex}
+			</if>
+			<if test="pageSize != null">
+			 , ${pageSize}
+			 </if>
+		</trim>
+	</select>
+	
+	<insert id="insert" parameterType="B2C">
+		insert into
+		<include refid="table"/>
+		(<include refid="allfields"/>)
+		values (
+			<include refid="allparams"/>
+		)
+	</insert>
+	
+	<update id="update" parameterType="B2C">
+		update
+		<include refid="table"/>
+		<include refid="allsets"/>
+		<include refid="whereid"/>
+	</update>
+
+	<update id="updateFields" parameterType="hashMap">
+		update
+		<include refid="table"/>
+		<set>
+			<if test="catuid != null">
+				<include refid="setcatuid"/>,
+			</if>
+			<if test="sn != null">
+				<include refid="setsn"/>,
+			</if>
+			<if test="name != null">
+				<include refid="setname"/>,
+			</if>
+			<if test="isonsale != null">
+				<include refid="setisonsale"/>,
+			</if>
+			<if test="isbest != null">
+				<include refid="setisbest"/>,
+			</if>
+			<if test="isnew != null">
+				<include refid="setisnew"/>,
+			</if>
+			<if test="istop != null">
+				<include refid="setistop"/>,
+			</if>
+			<if test="ishot != null">
+				<include refid="setishot"/>,
+			</if>
+			<if test="type != null">
+				and <include refid="settype"/>
+			</if>
+			<if test="showtype != null">
+				and <include refid="setshowtype"/>
+			</if>
+		</set>
+		<include refid="whereid"/>
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		delete from
+		<include refid="table"/>
+		<include refid="whereid"/>
+	</delete>
+	
+</mapper>
